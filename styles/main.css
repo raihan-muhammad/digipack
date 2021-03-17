@@ -823,6 +823,7 @@ body {
 @media (max-width: 575.98px) {
   #footer {
     font-size: 14px;
+    padding: 32px 0 30px;
   }
 }
 
@@ -848,6 +849,16 @@ body {
 
 #footer .logo-btm {
   width: 220px;
+}
+
+@media (max-width: 575.98px) {
+  #footer .logo-btm {
+    width: 130px !important;
+    height: 50px !important;
+  }
+  #min-m-mobile {
+    margin-top: -5%;
+  }
 }
 
 #footer .copyright {
@@ -883,7 +894,8 @@ body {
 @media (max-width: 575.98px) {
   #footer .block .title-section {
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 
