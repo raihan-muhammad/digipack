@@ -18,6 +18,9 @@ body {
     width: 85px;
     height: 33.56px;
   }
+  #navbar-nav-mobile {
+    margin-top: 5%;
+  }
 }
 
 @media (min-width: 992px) {
