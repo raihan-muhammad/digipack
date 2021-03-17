@@ -13,6 +13,13 @@ body {
   width: 128px;
 }
 
+@media (max-width: 576px) {
+  .logo-top {
+    width: 85px;
+    height: 33.56px;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-brand {
     margin-right: 50px;
