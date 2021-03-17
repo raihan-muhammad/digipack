@@ -190,7 +190,8 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     border-top: 1px solid #e5e5e5;
-    padding: 20px 0;
+    padding: 30px 0 20px 0;
+    margin-top: 14px !important;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -334,6 +335,13 @@ body {
   #home-slider .slick-dots {
     left: 10px;
     bottom: -28px;
+  }
+  #home-slider {
+    margin-top: 1% !important;
+  }
+
+  #how-to-order {
+    margin-top: -10% !important;
   }
 }
 
@@ -811,6 +819,7 @@ body {
 @media (max-width: 575.98px) {
   #before-footer {
     background: #2b72f5;
+    margin-top: -12%;
   }
 }
 
