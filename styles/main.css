@@ -180,35 +180,39 @@ section.pabrik .title-section img {
 	z-index: 1;
 	right: 0;
 	top: 0;
+	width: 16%;
+	margin-top: -25px;
 	padding-right: 10%;
 }
 
 section.pabrik .content {
-	padding-top: 25px;
+	padding-top: 15px;
 }
 
 section.pabrik .left img {
-	width: 90%;
+	width: 60%;
 	height: auto;
 	float: right;
+	margin-right: 40px;
 }
 
 section.pabrik .right {
-	padding-top: 35px;
+	padding-top: 20px;
+	margin-left: -30px;
 }
 
 section.pabrik .right .info {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 section.pabrik .right .info h5 {
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 section.pabrik .right .info a {
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	text-decoration: none;
 	color: rgb(49, 45, 117);
 }
@@ -1287,13 +1291,14 @@ section.pabrik .right .info a:hover {
 	section.pabrik .left img {
 		width: 100%;
 		height: auto;
-		padding-right: -40px;
+		margin-right: 0;
 	}
 
 	section.pabrik .right {
 		padding-top: 35px;
 		width: 100%;
 		text-align: center;
+		margin-left: 0;
 	}
 
 	section.pabrik .right .info {
