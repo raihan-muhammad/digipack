@@ -188,12 +188,37 @@ section.pabrik .title-section img {
 section.pabrik .content {
 	padding-top: 15px;
 }
+section.pabrik .left {
+	padding-left: 26%;
+}
 
-section.pabrik .left img {
-	width: 60%;
-	height: auto;
-	float: right;
-	margin-right: 40px;
+section.pabrik .base img {
+	position: absolute;
+	width: 25%;
+	z-index: 2;
+	border-top-left-radius: 30px;
+}
+
+section.pabrik .base .house .factory {
+	width: 60px !important;
+	margin-left: 50px;
+	margin-top: 25px;
+	z-index: 3;
+	padding-top: 50px;
+}
+
+section.pabrik .base .house .null {
+	width: 60px !important;
+	margin-left: 33px;
+	margin-top: 40px;
+}
+
+section.pabrik .map img {
+	position: absolute;
+	width: 25%;
+	z-index: 1;
+	margin-left: 142px;
+	border-top-right-radius: 30px;
 }
 
 section.pabrik .right {
@@ -1284,18 +1309,46 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .content {
-		margin-top: -35px;
+		margin-top: -25px;
 		width: 100%;
 	}
 
-	section.pabrik .left img {
-		width: 100%;
-		height: auto;
-		margin-right: 0;
+	section.pabrik .left {
+		padding-left: 0%;
+	}
+
+	section.pabrik .base img {
+		pposition: absolute;
+		width: 950%;
+		z-index: 2;
+		left: 30px;
+		border-top-left-radius: 30px;
+	}
+
+	section.pabrik .base .house .factory {
+		width: 60px !important;
+		margin-left: 35px;
+		margin-top: 20px;
+		z-index: 3;
+		padding-top: 40px;
+	}
+
+	section.pabrik .base .house .null {
+		width: 57px !important;
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+
+	section.pabrik .map img {
+		position: absolute;
+		width: 920%;
+		z-index: 1;
+		margin-left: 149px;
+		border-top-right-radius: 30px;
 	}
 
 	section.pabrik .right {
-		padding-top: 35px;
+		padding-top: 120%;
 		width: 100%;
 		text-align: center;
 		margin-left: 0;
