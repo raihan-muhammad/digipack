@@ -189,43 +189,44 @@ section.pabrik .content {
 	padding-top: 15px;
 }
 section.pabrik .left {
-	padding-left: 26%;
+	padding-left: 14%;
 }
 
 section.pabrik .base img {
 	position: absolute;
-	width: 25%;
+	width: 35%;
 	z-index: 2;
 	border-top-left-radius: 30px;
 }
 
 section.pabrik .base .house .factory {
-	width: 60px !important;
-	margin-left: 50px;
-	margin-top: 25px;
+	width: 80px !important;
+	margin-left: 70px;
+	margin-top: 55px;
 	z-index: 3;
 	padding-top: 50px;
 }
 
 section.pabrik .base .house .null {
-	width: 60px !important;
+	width: 90px !important;
 	margin-left: 33px;
-	margin-top: 40px;
+	margin-top: 55px;
 }
 
 section.pabrik .base .house p {
 	z-index: 3;
 	position: absolute;
-	top: 140px;
-	font-size: 10px;
+	top: 200px;
+	font-size: 15px;
 	font-weight: 700;
-	padding-left: 25px;
+	padding-left: 30px;
 }
 
 section.pabrik .left .serve-title {
 	position: absolute;
 	z-index: 3;
-	top: 190px;
+	top: 260px;
+	width: 67%;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 30px;
@@ -248,6 +249,8 @@ section.pabrik .left .serve-title p {
 
 section.pabrik .left .serve-title .serve-info {
 	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
 	margin-bottom: 20px;
 }
 
@@ -290,23 +293,22 @@ section.pabrik .left .serve-title .total-harga .prices span a:hover {
 
 section.pabrik .map img {
 	position: absolute;
-	width: 25%;
+	width: 37%;
 	z-index: 1;
-	margin-left: 142px;
+	margin-left: 200px;
 	border-top-right-radius: 30px;
 }
 
 section.pabrik .left .info {
-	top: 150px;
-	left: 440px;
-	width: 24.5%;
+	top: 220px;
+	left: 380px;
 	z-index: 2;
 	position: absolute;
 }
 
 section.pabrik .info .title {
-	font-size: 10px;
-	margin-right: 5px;
+	font-size: 12px;
+	margin-right: 20px;
 	color: #a8a8a8;
 }
 
@@ -320,7 +322,7 @@ section.pabrik .info .sub-title {
 }
 
 section.pabrik .right {
-	padding-top: 20px;
+	padding-top: 30px;
 	margin-left: -30px;
 }
 
@@ -330,12 +332,12 @@ section.pabrik .right .info {
 
 section.pabrik .right .info h5 {
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 section.pabrik .right .info a {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
 	color: rgb(49, 45, 117);
 }
@@ -358,6 +360,7 @@ section.pabrik .right .info a:hover {
 .floating {
 	right: 10px;
 	bottom: 80px;
+	z-index: 4;
 }
 
 .floating img {
@@ -1100,6 +1103,7 @@ section.pabrik .right .info a:hover {
 
 #before-footer {
 	background: #1f70e6;
+	margin-top: 10%;
 }
 
 @media (max-width: 575.98px) {
@@ -1416,17 +1420,17 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .base img {
-		pposition: absolute;
-		width: 950%;
+		position: absolute;
+		width: 1000%;
 		z-index: 2;
-		left: 30px;
+		left: 20px;
 		border-top-left-radius: 30px;
 	}
 
 	section.pabrik .base .house .factory {
 		width: 60px !important;
 		margin-left: 35px;
-		margin-top: 20px;
+		margin-top: 30px;
 		z-index: 3;
 		padding-top: 40px;
 	}
@@ -1434,48 +1438,69 @@ section.pabrik .right .info a:hover {
 	section.pabrik .base .house .null {
 		width: 57px !important;
 		margin-left: 20px;
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 
 	section.pabrik .base .house p {
 		z-index: 3;
 		position: absolute;
 		width: 130px;
-		top: 120px;
+		top: 135px;
 		font-size: 10px;
 		font-weight: 700;
-		margin-left: 15px;
+		margin-left: 8px;
 	}
 
 	section.pabrik .map img {
 		position: absolute;
-		width: 920%;
+		width: 1025%;
 		z-index: 1;
-		margin-left: 149px;
+		margin-left: 145px;
 		border-top-right-radius: 30px;
+	}
+
+	section.pabrik .left .info {
+		top: 140px;
+		left: 155px;
+		/* font-size: 224px; */
+		z-index: 3;
+		/* font-size: 10px; */
+		position: absolute;
+	}
+
+	section.pabrik .info .title {
+		font-size: 8px;
+		padding-right: 30px;
+		/* margin-right: 20px; */
+		color: #a8a8a8;
+		width: 200%;
+	}
+
+	section.pabrik .info .title span {
+		font-weight: 700;
+		color: black;
 	}
 
 	section.pabrik .left .serve-title {
 		position: absolute;
 		z-index: 3;
-		width: 1800%;
+		width: 1830%;
 		top: 190px;
-		padding-left: 10px;
 		padding-right: 20px;
-		padding-top: 0px;
-		margin-left: 30px;
+		padding-top: 20px;
+		margin-left: 22px;
 		margin-top: -15px;
 		border-bottom-left-radius: 30px;
 		border-bottom-right-radius: 30px;
 	}
 
 	section.pabrik .left .serve-title h4 {
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 700;
 	}
 
 	section.pabrik .left .serve-title h5 {
-		font-size: 15px;
+		font-size: 12px;
 		font-weight: 700;
 	}
 	section.pabrik .left .serve-title p {
@@ -1485,10 +1510,6 @@ section.pabrik .right .info a:hover {
 	section.pabrik .left .serve-title .serve-info {
 		font-weight: 700;
 		margin-bottom: 20px;
-	}
-
-	section.pabrik .left .serve-title .serve-info .item {
-		margin-right: 59px;
 	}
 
 	section.pabrik .left .serve-title .serve-info .item-price .price span a {
@@ -1517,7 +1538,7 @@ section.pabrik .right .info a:hover {
 		background-color: aquamarine;
 		padding-top: 20px !important;
 		margin: -15px;
-		margin-left: -12px;
+		margin-left: -20px;
 		margin-right: -21px;
 		padding: 0px 20px;
 		border-bottom-left-radius: 30px;
@@ -1535,7 +1556,7 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .right {
-		padding-top: 130%;
+		padding-top: 140%;
 		width: 100%;
 		text-align: center;
 		margin-left: 0;
