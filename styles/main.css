@@ -182,6 +182,7 @@ section.teknologi .teknologi-desc {
 section.pabrik {
 	margin-top: 108px;
 	position: relative;
+	margin-bottom: -2%;
 }
 
 section.pabrik .title-section img {
@@ -189,9 +190,9 @@ section.pabrik .title-section img {
 	z-index: 1;
 	right: 0;
 	top: 0;
-	width: 16%;
-	margin-top: -25px;
-	padding-right: 10%;
+	width: 13%;
+	margin-top: -15px;
+	padding-right: 7%;
 }
 
 section.pabrik .content {
@@ -373,7 +374,7 @@ section.pabrik .right .info h5 {
 }
 
 section.pabrik .right .info a {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 16px;
 	text-decoration: none;
 	color: rgb(49, 45, 117);
@@ -1455,12 +1456,13 @@ section.pabrik .right .info a:hover {
 
 	section.pabrik {
 		margin-top: 58px;
+		padding-bottom: 40px;
 	}
 
 	section.pabrik .title-section img {
-		width: 23%;
-		top: -20px;
-		right: -15px;
+		width: 20%;
+		top: -10px;
+		right: -8px;
 		overflow-x: visible;
 	}
 
@@ -1521,20 +1523,21 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .left .info {
-		top: 120px;
-		left: 240px;
+		top: 110px;
+		left: 145px;
 		z-index: 3;
+		width: 1022%;
 		position: absolute;
-		/* box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
-			rgb(0 0 0 / 4%) 0px 10px 10px -5px !important; */
+		box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
+			rgb(0 0 0 / 4%) 0px 10px 10px -5px !important;
 	}
 
 	section.pabrik .info .title {
 		font-size: 8px;
-		padding-right: 50px;
-		/* margin-right: 20px; */
+		padding: 8px 0;
 		color: #a8a8a8;
 		width: 200%;
+		margin-bottom: 0;
 	}
 
 	section.pabrik .info .title span {
@@ -1567,11 +1570,24 @@ section.pabrik .right .info a:hover {
 	}
 	section.pabrik .left .serve-title p {
 		font-size: 10px;
+		margin-bottom: 0;
+	}
+
+	section.pabrik .left .serve-title .order {
+		margin-bottom: 10px;
+	}
+
+	section.pabrik .left .serve-title .serve-info .item .items-sub {
+		margin-bottom: 5px;
 	}
 
 	section.pabrik .left .serve-title .serve-info {
 		font-weight: 700;
 		margin-bottom: 20px;
+	}
+
+	section.pabrik .left .serve-title .serve-info .item-price .price {
+		margin-bottom: 5px;
 	}
 
 	section.pabrik .left .serve-title .serve-info .item-price .price span a {
@@ -1584,7 +1600,8 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .left .serve-title .total-harga .prices {
-		left: 12px;
+		left: 10px;
+		margin-left: 155px;
 	}
 
 	section.pabrik
@@ -1605,19 +1622,17 @@ section.pabrik .right .info a:hover {
 		display: flex;
 		justify-content: space-between;
 		overflow: hidden;
-		background-color: aquamarine;
-		padding-top: 20px !important;
 		margin: -15px;
 		margin-left: -20px;
 		margin-right: -21px;
-		padding: 0px 20px;
+		padding: 15px 22px !important;
 		border-bottom-left-radius: 30px;
 		border-bottom-right-radius: 30px;
 	}
 
-	section.pabrik .left .serve-title .total-harga .prices {
+	/* section.pabrik .left .serve-title .total-harga .prices {
 		margin-left: 154px;
-	}
+	} */
 
 	section.pabrik .left .serve-title .total-harga .prices span a {
 		font-weight: 300;
@@ -1630,7 +1645,7 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .right {
-		padding-top: 140%;
+		padding-top: 130%;
 		width: 100%;
 		text-align: center;
 		margin-left: 0;
@@ -1646,7 +1661,7 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .right .info a {
-		font-weight: 400;
+		font-weight: 300;
 		font-size: 14px;
 		text-decoration: none;
 		color: rgb(49, 45, 117);
