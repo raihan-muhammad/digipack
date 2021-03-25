@@ -1,0 +1,173 @@
+.banner {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.banner img {
+	height: auto;
+	width: 100%;
+}
+
+.pilihan-kemasan button {
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 15px;
+}
+
+.pilihan-kemasan .active {
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+}
+
+.btn-pilih {
+	padding: 12px 25px;
+	background: #eaf5ff;
+}
+
+.btn-kemasan {
+	padding: 12px 25px;
+	border: 1px solid #ffc90a;
+}
+
+.btn-kemasan:hover {
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+}
+
+.produk {
+	margin-top: 100px;
+}
+
+.produk .foto-produk {
+	height: 110%;
+	width: 80%;
+	margin-right: 10px !important;
+	border: 1px solid #ffc90a;
+	border-radius: 30px;
+	padding: 50px 0px;
+}
+
+.produk .info-produk h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.produk .info-produk .produk-desc {
+	font-weight: 300;
+	font-size: 16px;
+	width: 66%;
+	margin-top: 10px;
+	line-height: 30px;
+}
+
+.custom-form-control {
+	display: block;
+	width: 100%;
+	/* height: calc(1.5em + .75rem + 2px); */
+	padding: 0.675rem 0.75rem;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
+	/* color: #c0c4cd; */
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	text-decoration: none;
+	outline: none;
+}
+
+.custom-form-control::placeholder {
+	color: #c0c4cd;
+}
+
+.select-form {
+	display: inline-block;
+	width: 100%;
+	/* height: calc(1.5em + 0.75rem + 2px); */
+	padding: 0.675rem 0.75rem;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #c0c4cd;
+	background: #fff url(../images/down-chevron.svg) no-repeat right 1rem
+		center/20px 16px;
+	vertical-align: middle;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	text-decoration: none;
+	outline: none;
+}
+
+.input-group {
+	border: 1px solid #c0c4cd;
+	display: flex;
+	align-items: center;
+	border-radius: 6px;
+	padding: 0px 20px;
+	width: 40%;
+}
+
+.input-group input {
+	border: none;
+	color: #c0c4cd;
+}
+
+.input-group input:active {
+	text-decoration: none;
+	outline: none;
+}
+
+.input-group-text {
+	background: none;
+	border: none;
+	font-size: 25px;
+	color: #c0c4cd;
+	cursor: pointer;
+	padding: 0;
+}
+
+.kebutuhan {
+	margin-top: 100px;
+}
+
+.kebutuhan .title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+}
+
+.kebutuhan .title::before {
+	position: absolute;
+	content: '';
+	background-color: #ff2728;
+	width: 25px;
+	height: 3px;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.kebutuhan .form-kemasan {
+	margin-top: 80px;
+}
+
+.kebutuhan .produk-title {
+	font-weight: 600;
+	font-size: 36px;
+}
+
+.kebutuhan form {
+	margin-top: 20px;
+	width: 66%;
+}
+
+.kebutuhan form label {
+	font-weight: 600;
+	font-size: 18px;
+}
