@@ -84,11 +84,12 @@ body {
 	font-size: 24px;
 }
 
-.profile-nav .profile-nav p {
+.profile-nav p {
 	font-family: 'Poppins';
 	margin-top: 31px;
 	font-size: 18px;
 	line-height: 27px;
+	font-weight: 400;
 }
 
 section.profile {
@@ -179,7 +180,7 @@ section.teknologi .teknologi-desc {
 	width: 850px;
 	text-align: center;
 	margin: auto;
-	font-weight: 500;
+	font-weight: 400;
 	padding-top: 20px;
 }
 
@@ -1415,7 +1416,7 @@ section.pabrik .right .info a:hover {
 		font-size: 10px;
 		padding: 0px 12px;
 		width: 100%;
-		font-weight: 300;
+		font-weight: 400 !important;
 	}
 
 	.after-misi {

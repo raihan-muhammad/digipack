@@ -28,6 +28,10 @@
 	border: 1px solid #ffc90a;
 }
 
+.kemasan-fill {
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+}
+
 .btn-kemasan:hover {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
 }
@@ -112,6 +116,11 @@
 
 .input-group input {
 	border: none;
+	color: #2b3a91;
+	font-weight: 600;
+}
+
+.input-group input::placeholder {
 	color: #c0c4cd;
 }
 
@@ -165,9 +174,143 @@
 .kebutuhan form {
 	margin-top: 20px;
 	width: 66%;
+	margin-bottom: 100px;
 }
 
 .kebutuhan form label {
 	font-weight: 600;
 	font-size: 18px;
+}
+.kebutuhan form .upload {
+	margin-top: 40px;
+}
+
+.kebutuhan form .upload .upload-design,
+.kebutuhan form .upload .share-link {
+	cursor: pointer;
+}
+
+.kebutuhan form .upload .upload-design p {
+	margin: 0px 10px;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.kebutuhan form .upload .share-link p {
+	margin: 0px 10px;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.kebutuhan form .nav-upload {
+	position: relative;
+}
+
+.choosen {
+	width: 50%;
+	position: absolute;
+	height: 4px;
+	bottom: 1px;
+	background: linear-gradient(255.05deg, #ed1c24 25.62%, #2b3a91 67.77%);
+	border-radius: 10px 10px 0px 0px;
+}
+
+.divider {
+	border-bottom: 1px solid #c0c4cd;
+	margin-top: 10px;
+}
+.divider-1 {
+	border-bottom: 1px solid #c0c4cd;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.kebutuhan form .upload-file {
+	margin-top: 20px;
+}
+
+.kebutuhan form .upload-file p {
+	font-weight: 600;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+/* 
+.kebutuhan form .upload-file input {
+	background-color: red;
+	border: none;
+} */
+
+.kebutuhan form .upload-file input {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.kebutuhan form .upload-file input:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.kebutuhan form .upload-file input::-webkit-file-upload-button {
+	visibility: hidden;
+	margin-left: -80px;
+}
+.kebutuhan form .upload-file input::before {
+	content: 'Choose File';
+	display: inline-block;
+	background: linear-gradient(172.04deg, #1891f6 10.75%, #1a38e3 139.85%);
+	border-radius: 6px;
+	padding: 10px 30px;
+	outline: none;
+	white-space: nowrap;
+	cursor: pointer;
+	color: white;
+	font-weight: 400;
+	font-size: 10pt;
+}
+
+.kebutuhan form .upload-price h5 {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.kebutuhan form .upload-price .prefix {
+	color: #c0c4cd;
+}
+
+.kebutuhan form .upload-price .unit-input {
+	border: none;
+	margin-left: 10px;
+}
+
+.kebutuhan form .upload-price .unit-input::placeholder {
+	color: #c0c4cd;
+}
+
+.kebutuhan form .upload-price .unit-input:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.kebutuhan form .upload-price .upload-info {
+	color: #2e3a59;
+	font-size: 10px;
+	font-weight: 600;
+	margin-top: 10px;
+	padding-left: 15px;
+}
+
+.kebutuhan .nav-btn {
+	margin-top: 30px;
+}
+
+.kebutuhan form a {
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.kebutuhan form a button,
+.kebutuhan form button {
+	font-size: 14px;
+	padding: 10px 30px !important;
+	font-weight: 600;
 }
