@@ -10,12 +10,14 @@
 
 .pilihan-kemasan button {
 	font-weight: bold;
-	font-size: 12px;
-	margin-right: 20px;
+	font-size: 14px;
+	/* margin-right: 20px; */
+	font-weight: 400;
 }
 
 .pilihan-kemasan .active {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+	border: none;
 }
 
 .pilihan-kemasan .row {
@@ -35,6 +37,7 @@
 
 .kemasan-fill {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+	padding: 13px 26px;
 }
 
 .no-border {
@@ -43,6 +46,8 @@
 
 .btn-kemasan:hover {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+	border: none;
+	padding: 13px 26px;
 }
 
 .produk {
