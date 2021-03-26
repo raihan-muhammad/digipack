@@ -290,7 +290,7 @@ section.pabrik .left .serve-title .serve-info .item .items-sub {
 }
 
 section.pabrik .left .serve-title .serve-info .item-price {
-	margin-right: 5.8%;
+	margin-left: -5.8%;
 }
 
 section.pabrik .left .serve-title .serve-info .item-price .price span a {
@@ -1534,7 +1534,7 @@ section.pabrik .right .info a:hover {
 
 	section.pabrik .map img {
 		position: absolute;
-		width: 56%;
+		width: 58%;
 		z-index: 1;
 		margin-left: 145px;
 		border-top-right-radius: 30px;
@@ -1542,9 +1542,9 @@ section.pabrik .right .info a:hover {
 
 	section.pabrik .left .info {
 		top: 146px;
-		left: 152px;
+		left: 150px;
 		z-index: 3;
-		width: 54%;
+		width: 56%;
 		position: absolute;
 		box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
 			rgb(0 0 0 / 4%) 0px 10px 10px -5px !important;
