@@ -267,7 +267,7 @@ section.pabrik .left .serve-title h5 {
 section.pabrik .left .serve-title p {
 	font-size: 13px;
 	color: #312d75;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 section.pabrik .left .serve-title .order {
@@ -304,19 +304,22 @@ section.pabrik .left .serve-title .serve-info .item-price .price span a:hover {
 
 section.pabrik .left .serve-title .total-harga {
 	font-weight: 700;
-	background-color: #eaf5ff;
-	padding-top: 19px !important;
-	margin: -21px;
-	margin-left: -40px;
-	padding: 0px 40px;
+	background-color: rgb(234, 245, 255);
+	margin: -21px -21px -21px -40px;
+	padding-right: 48px;
+	padding-bottom: 0px;
+	padding-left: 40px;
+	display: flex;
+	justify-content: space-between;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
+	padding-top: 19px !important;
 }
 
-section.pabrik .left .serve-title .total-harga .prices {
-	margin-left: 57%;
+/* section.pabrik .left .serve-title .total-harga .prices {
+	margin-left: 58%;
 	position: absolute;
-}
+} */
 
 section.pabrik .left .serve-title .total-harga .prices span a {
 	font-weight: 300;
@@ -1604,10 +1607,10 @@ section.pabrik .right .info a:hover {
 		margin-right: 15.5%;
 	}
 
-	section.pabrik .left .serve-title .total-harga .prices {
+	/* section.pabrik .left .serve-title .total-harga .prices {
 		left: 10px;
-		margin-left: 155px;
-	}
+		margin-left: 150px;
+	} */
 
 	section.pabrik
 		.left
@@ -1624,13 +1627,12 @@ section.pabrik .right .info a:hover {
 
 	section.pabrik .left .serve-title .total-harga {
 		font-weight: 700;
-		display: flex;
-		justify-content: space-between;
-		overflow: hidden;
 		margin: -15px;
 		margin-left: -20px;
+		padding-bottom: 20px !important;
+		padding-right: 12%;
+		padding-left: 9%;
 		margin-right: -21px;
-		padding: 18px 22px !important;
 		border-bottom-left-radius: 30px;
 		border-bottom-right-radius: 30px;
 	}

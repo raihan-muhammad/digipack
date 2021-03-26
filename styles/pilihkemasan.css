@@ -10,12 +10,17 @@
 
 .pilihan-kemasan button {
 	font-weight: bold;
-	font-size: 16px;
-	margin-right: 15px;
+	font-size: 12px;
+	margin-right: 20px;
 }
 
 .pilihan-kemasan .active {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+}
+
+.pilihan-kemasan .row {
+	display: flex;
+	justify-content: center;
 }
 
 .btn-pilih {
@@ -30,6 +35,10 @@
 
 .kemasan-fill {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+}
+
+.no-border {
+	border: none;
 }
 
 .btn-kemasan:hover {
@@ -55,7 +64,7 @@
 }
 
 .produk .info-produk .produk-desc {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16px;
 	width: 66%;
 	margin-top: 10px;
@@ -120,6 +129,11 @@
 	font-weight: 600;
 }
 
+.input-group input:active {
+	outline: none;
+	text-decoration: none;
+}
+
 .input-group input::placeholder {
 	color: #c0c4cd;
 }
@@ -178,7 +192,7 @@
 }
 
 .kebutuhan form label {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 18px;
 }
 .kebutuhan form .upload {
@@ -230,15 +244,10 @@
 }
 
 .kebutuhan form .upload-file p {
-	font-weight: 600;
+	font-weight: 500;
 	margin-bottom: 10px;
 	font-size: 14px;
 }
-/* 
-.kebutuhan form .upload-file input {
-	background-color: red;
-	border: none;
-} */
 
 .kebutuhan form .upload-file input {
 	margin-top: 10px;
@@ -269,7 +278,7 @@
 }
 
 .kebutuhan form .upload-price h5 {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 }
 
@@ -294,7 +303,7 @@
 .kebutuhan form .upload-price .upload-info {
 	color: #2e3a59;
 	font-size: 10px;
-	font-weight: 600;
+	font-weight: 500;
 	margin-top: 10px;
 	padding-left: 15px;
 }
