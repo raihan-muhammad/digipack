@@ -185,6 +185,56 @@
 	margin-top: 80px;
 }
 
+.kebutuhan .form-kemasan .kemasan {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.kebutuhan .form-kemasan .kemasan .produk-img img {
+	padding-top: 50px;
+	top: 0;
+	width: 50%;
+	z-index: 1;
+	right: 100px;
+	position: absolute;
+}
+
+.kebutuhan .form-kemasan .kemasan .kemasan-elipse img {
+	position: absolute;
+	width: 50%;
+	top: -5px;
+	right: 45px;
+}
+
+.kebutuhan .form-kemasan .kemasan .kemasan-pattern img,
+.kebutuhan .form-kemasan .kemasan .kemasan-shape img {
+	position: absolute;
+}
+
+.kebutuhan .form-kemasan .kemasan .kemasan-pattern .pattern-1 {
+	bottom: 0;
+	top: 330px;
+	left: 90px;
+}
+
+.kebutuhan .form-kemasan .kemasan .kemasan-pattern .pattern-2 {
+	right: 80px;
+	top: 430px;
+}
+
+.kebutuhan .form-kemasan .kemasan .kemasan-shape .shape-1 {
+	left: 130px;
+	top: 125px;
+	cursor: pointer;
+}
+
+.kebutuhan .form-kemasan .kemasan .kemasan-shape .shape-2 {
+	right: 80px;
+	top: 275px;
+	cursor: pointer;
+}
+
 .kebutuhan .produk-title {
 	font-weight: 600;
 	font-size: 36px;
@@ -327,4 +377,8 @@
 	font-size: 14px;
 	padding: 10px 30px !important;
 	font-weight: 600;
+}
+
+#before-footer {
+	margin-top: 0% !important;
 }
