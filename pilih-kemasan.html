@@ -87,17 +87,20 @@
 			<div class="pilihan-kemasan container">
 				<div class="row d-flex justify-content-around">
 					<button type="button" class="btn btn-pilih">Pilihan Kemasan</button>
-				<button type="button" class="btn btn-kemasan">Central Seal</button>
-				<button type="button" class="btn btn-kemasan active">
-					Standing Pouch
-				</button>
-				<button type="button" class="btn btn-kemasan">Vacuum Pack</button>
-				<button type="button" class="btn btn-kemasan">Gusset Pouch</button>
-				<button type="button" class="btn btn-kemasan">Three Block Seal</button>
+					<button type="button" class="btn btn-kemasan">Central Seal</button>
+					<button type="button" class="btn btn-kemasan active">
+						Standing Pouch
+					</button>
+					<button type="button" class="btn btn-kemasan">Vacuum Pack</button>
+					<button type="button" class="btn btn-kemasan">Gusset Pouch</button>
+					<button type="button" class="btn btn-kemasan">Three Block Seal</button>
 				</div>
 			</div>
+			<div id="show-mobile">
+				<button class="btn btn-pilih">Pilihan Kemasan</button>
+			</div>
 			<div class="produk">
-				<div class="container">
+				<div class="container" id="hide-mobile">
 					<div class="row">
 						<div class="col d-flex justify-content-end">
 							<div class="foto-produk d-flex justify-content-center">
@@ -117,6 +120,30 @@
 									produk yang dikemas menggunakan packaging ini akan terjaga
 									kualitasnya.
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container" id="show-mobile">
+					<div class="row">
+						<div class="col">
+							<div class="info-produk">
+								<h1>Standing Pouch</h1>
+								<div class="produk-desc">
+									Packaging Standing Pouch merupakan kemasan yang bisa berdiri
+									dan bentuknya menyerupai kantung. Standing Pouch dari Digipack
+									by Supernova dapat dilengkapi dengan zipper lock yang bisa
+									dibuka atau ditutup kembali. Selain praktis, packaging
+									Standing Pouch juga kuat, anti lecet, dan tahan benturan
+									sehingga produk aman dari kebocoran. Jadi bisa dipastikan
+									produk yang dikemas menggunakan packaging ini akan terjaga
+									kualitasnya.
+								</div>
+							</div>
+						</div>
+						<div class="col  d-flex justify-content-end">
+							<div class="foto-produk d-flex justify-content-center">
+								<img src="./images/produk-standingpouch.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -144,7 +171,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col mobile">
 							<div class="produk-title">Standing Pouch</div>
 							<form>
 								<div class="form-group">
@@ -279,7 +306,7 @@
 											</div>
 										</div>
 										<div class="col-6">
-											<div class="share-link d-flex align-items-center">
+											<div class="share-link d-flex align-items-center d-flex justify-content-between">
 												<div class="share-icon">
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +388,7 @@
 				</div>
 			</div>
 
-			<div id="before-footer">
+			<!-- <div id="before-footer">
 					<div class="container">
 						<a href="#" class="d-none d-sm-block"
 							><img
@@ -376,9 +403,9 @@
 								class="img-fluid wow slideInRight"
 						/></a>
 					</div>
-				</div>
+				</div> -->
 
-			<div id="footer" class="">
+			<!-- <div id="footer" class="">
 				<div class="container">
 					<div class="row">
 						<div class="logo col-12 mb-5">
@@ -479,11 +506,11 @@
 							<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
 						</p>
 					</div>
-					<div class="floating position-fixed">
+					<!-- <div class="floating position-fixed">
 						<a href="#"><img src="images/wa.svg" alt="" class="img-fluid" /></a>
-					</div>
+					</div> -->
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
