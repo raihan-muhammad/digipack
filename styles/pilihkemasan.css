@@ -371,16 +371,25 @@
 	margin-top: 30px;
 }
 
+.kebutuhan .nav-btn button {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.btn-sec {
+	padding: 12px 25px;
+	border: 1px solid #ffc90a;
+}
+
+.btn-sec:hover {
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+	padding: 12px 26px !important;
+	border: none;
+}
+
 .kebutuhan form a {
 	text-decoration: none;
 	margin-right: 20px;
-}
-
-.kebutuhan form a button,
-.kebutuhan form button {
-	font-size: 14px;
-	padding: 10px 30px !important;
-	font-weight: 600;
 }
 
 #before-footer {
@@ -395,6 +404,8 @@
 	#show-mobile {
 		display: block !important;
 		padding: 0px 20px;
+		margin-top: -30px;
+		padding-bottom: 20px;
 	}
 
 	#show-mobile button {
@@ -403,6 +414,10 @@
 
 	#hide-mobile {
 		display: none;
+	}
+
+	.banner img {
+		margin-top: -40px;
 	}
 
 	.produk {
@@ -437,6 +452,7 @@
 
 	.kebutuhan {
 		margin-top: 80px;
+		overflow: hidden;
 	}
 
 	.kebutuhan .title {
@@ -503,5 +519,38 @@
 
 	.kebutuhan form {
 		width: 100%;
+	}
+
+	.kebutuhan form .upload .upload-design p {
+		font-size: 9px;
+	}
+
+	.kebutuhan form .upload .share-link p {
+		font-size: 10px;
+	}
+
+	.kebutuhan .nav-btn {
+		margin-top: 40px;
+		width: 100%;
+		display: flex;
+		padding: 0px 20px;
+	}
+
+	.kebutuhan .nav-btn .btn-contact {
+		border: 1px solid #ffc90a;
+		padding: 12px 25px;
+	}
+
+	.kebutuhan .nav-btn .btn-contact:hover {
+		background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+	}
+
+	.kebutuhan form label {
+		font-size: 14px;
+	}
+
+	.kebutuhan .nav-btn button {
+		font-size: 12px;
+		padding: 10px 25px;
 	}
 }
