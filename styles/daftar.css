@@ -7,7 +7,7 @@
 }
 
 .login-form {
-	margin-bottom: -60px;
+	margin-bottom: -100px;
 }
 
 .login-form h3 {
@@ -17,12 +17,16 @@
 	margin-bottom: 60px;
 }
 
+#footer {
+	padding: 0 0 30px;
+}
+/* 
 label {
 	font-weight: 500;
 	font-size: 16px;
 }
 
-.login-form .custom {
+.custom {
 	border: 1px solid #c0c4cd;
 	box-sizing: border-box;
 	border-radius: 6px;
@@ -71,7 +75,7 @@ label {
 	border: none;
 	color: #c0c4cd;
 	cursor: pointer;
-}
+} */
 
 .btn-daftar {
 	background: linear-gradient(172.04deg, #1891f6 10.75%, #1a38e3 139.85%);
@@ -83,9 +87,13 @@ label {
 	margin: 40px 0px;
 }
 
-.btn-daftar:hover {
+/* .btn-daftar:hover {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
 }
+
+.btn-daftar:focus {
+	box-shadow: none;
+} */
 
 h4 {
 	font-weight: 400;
@@ -108,20 +116,22 @@ h4 span a {
 	padding: 0px 10px;
 }
 
-.alternative {
+/* .alternative {
 	margin: 30px 0px;
 	font-weight: 400;
 	font-size: 14px;
-}
+} */
 
 .line {
 	border: 1px solid #c0c4cd;
 	margin-top: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .text-alert {
 	font-size: 14px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .text-alert span a {
