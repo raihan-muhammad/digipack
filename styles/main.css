@@ -583,6 +583,11 @@ section.pabrik .right .info a:hover {
 	padding: 7px;
 }
 
+.menu-act .menu-log li.singin a:focus,
+.menu-act .menu-log li.singup a:focus {
+	box-shadow: none;
+}
+
 @media (max-width: 991.98px) {
 	.menu-act .menu-log li.singin a {
 		width: 100%;

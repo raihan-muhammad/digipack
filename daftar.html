@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>digipack</title>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" href="styles/vendor.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/daftar.css" />
+		<link rel="stylesheet" href="styles/modal.css" />
+		<script src="scripts/modernizr.js"></script>
+	</head>
+	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve
+				your experience.
+			</p>
+		<![endif]-->
+		<div id="wrapper" class="position-relative">
+			<div class="overlay d-none"></div>
+			<div id="header" class="position-fixed">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg navbar-light p-0">
+						<a class="navbar-brand" href="#"
+							><img src="images/logo.svg" alt="" class="img-fluid logo-top"
+						/></a>
+						<button
+							class="navbar-toggler collapsed"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto" id="navbar-nav-mobile">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html">Beranda</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="about-us.html">Tentang Kami</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pilih-kemasan.html"
+										>Pilihan Kemasan</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+							</ul>
+							<div class="menu-act my-2 my-lg-0 d-flex">
+								<ul class="pl-0 ml-0 mb-0 menu-log">
+									<li class="singin">
+										<a
+											href="#"
+											class="btn rounded"
+											data-toggle="modal"
+											type="button"
+											data-target="#modalLogin"
+											>Masuk</a
+										>
+									</li>
+									<li class="singup">
+										<a href="daftar.html" class="btn rounded">Daftar</a>
+									</li>
+								</ul>
+								<ul class="lang mb-0 pl-0">
+									<li class="active"><a href="#">ID</a></li>
+									<li class="mr-0"><a href="#">EN</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="content-wrapper pt-5 mt-5">
+				<div class="logo container">
+					<img src="./images/logo-big.jpg" alt="" />
+				</div>
+				<div class="login-form container">
+					<h3>Daftar Akun Baru</h3>
+					<div class="row">
+						<div class="col-6">
+							<form action="">
+								<div class="form-group">
+									<label for="nama">Nama Lengkap</label>
+									<input
+										type="text"
+										class="form-control custom"
+										id="nama"
+										placeholder="Nama Lengkap"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="email">Email address</label>
+									<input
+										type="email"
+										class="form-control custom"
+										id="email"
+										placeholder="Alamat Email"
+									/>
+								</div>
+								<div class="password">
+									<label for="password">Password</label>
+									<div class="input-pass">
+										<div class="input-group">
+											<input type="password" placeholder="Password" />
+											<div class="input-group-append">
+												<span class="input-group-text">
+													<i class="fa fa-eye-slash" aria-hidden="true"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="btn btn-daftar">Lanjut</button>
+								<h4>
+									Sudah punya akun ? <span><a href="">Masuk Sekarang</a></span>
+								</h4>
+								<div class="alternative d-flex align-items-center">
+									Atau Daftar Menggunakan
+
+									<div class="btn-alter ml-4">
+										<button class="btn border mr-3">
+											<img src="./images/google.png" alt="" />
+										</button>
+										<button class="btn border">
+											<img src="./images/fb.png" alt="" />
+										</button>
+									</div>
+								</div>
+								<div class="line"></div>
+								<div class="text-alert">
+									This site is protected by reCAPTCHA and the Google
+									<span><a href=""> Privacy Policy</a></span> and
+									<span><a href="">Terms of Service</a></span> apply.
+								</div>
+							</form>
+						</div>
+						<div class="col-6">
+							<div class="img-hero">
+								<img src="./images/login-img.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="before-footer">
+					<div class="container">
+						<a href="#" class="d-none d-sm-block"
+							><img
+								src="images/before-footer.jpg"
+								alt=""
+								class="img-fluid wow slideInRight"
+						/></a>
+						<a href="#" class="d-sm-none d-block"
+							><img
+								src="images/cta-mobile.png"
+								alt=""
+								class="img-fluid wow slideInRight"
+						/></a>
+					</div>
+				</div>
+
+				<!-- Modal login -->
+				<div
+					class="modal fade"
+					id="modalLogin"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
+								<!-- <button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button> -->
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group">
+										<label for="nama">Nama Lengkap</label>
+										<input
+											type="text"
+											class="form-control custom"
+											id="nama"
+											placeholder="Nama Lengkap"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="email">Email address</label>
+										<input
+											type="email"
+											class="form-control custom"
+											id="email"
+											placeholder="Alamat Email"
+										/>
+									</div>
+									<div class="password">
+										<label for="password">Password</label>
+										<div class="input-pass">
+											<div class="input-group">
+												<input type="password" placeholder="Password" />
+												<div class="input-group-append">
+													<span class="input-group-text">
+														<i class="fa fa-eye-slash" aria-hidden="true"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button
+										class="btn btn-daftar"
+										data-toggle="modal"
+										type="button"
+										data-target="#modalLogin"
+									>
+										Lanjut
+									</button>
+									<h4>
+										Belum punya akun ?
+										<span><a href="">Ayo Daftar</a></span>
+									</h4>
+									<div class="alternative d-flex align-items-center">
+										Atau Daftar Menggunakan
+
+										<div class="btn-alter ml-4">
+											<button class="btn border mr-3">
+												<img src="./images/google.png" alt="" />
+											</button>
+											<button class="btn border">
+												<img src="./images/fb.png" alt="" />
+											</button>
+										</div>
+									</div>
+									<div class="line"></div>
+									<div class="text">
+										Dengan melakukan login, anda setuju dengan Syarat &
+										Ketentuan Supernova Digipack.
+									</div>
+									<div class="text-alert">
+										This site is protected by reCAPTCHA and the Google
+										<span><a href=""> Privacy Policy</a></span> and
+										<span><a href="">Terms of Service</a></span> apply.
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="footer" class="">
+					<div class="container">
+						<div class="row">
+							<div class="logo col-12 mb-5">
+								<img src="images/logo.svg" alt="" class="img-fluid logo-btm" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="block" id="min-m-mobile">
+									<div class="title-section">Alamat</div>
+									<div class="column-address">
+										<div class="desc">
+											<p class="mb-0">
+												Kawasan Industri Jababeka II Jalan Industri Selatan Blok
+												LL No. 1 Pasirsari, Cikarang Selatan, Bekasi 17530 -
+												Indonesia
+											</p>
+											<strong>Jam Operasional</strong>
+											<p>
+												Senin - Jumat
+												<span class="d-block">08:00 - 17:00 WIB</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="block">
+									<div class="title-section">Hubungi Kami</div>
+									<div class="column">
+										<div class="list-contact">
+											<ul class="pl-0 ml-0">
+												<li class="mb-2">
+													<span class="font-weight-bold">Email :</span
+													><a href="mailto:marketing@supernova-id.com"
+														>marketing@supernova-id.com</a
+													>
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">No.Telpon :</span>+62
+													21 8983 1969
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">Fax :</span>+62 21 8983
+													1967
+												</li>
+												<li class="mb-2">
+													<span class="font-weight-bold">Whatsapp :</span>+62
+													8231 7714 488
+												</li>
+											</ul>
+										</div>
+										<div class="list-sosmed my-sm-5 my-4">
+											<ul class="pl-0 ml-0">
+												<li>
+													<a href="https://www.facebook.com/" target="_blank"
+														><i class="fab fa-facebook-f"></i
+													></a>
+												</li>
+												<li>
+													<a href="https://www.instagram.com/" target="_blank"
+														><i class="fab fa-instagram"></i
+													></a>
+												</li>
+												<li>
+													<a href="https://www.linkedin.com/" target="_blank"
+														><i class="fab fa-linkedin-in"></i
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="block pl-sm-5">
+									<div class="title-section">Informasi</div>
+									<div class="column">
+										<div class="menus">
+											<ul class="ml-0 pl-0">
+												<li class="mb-2">
+													<a href="#">Tentang Supernova Digipack</a>
+												</li>
+												<li class="mb-2"><a href="#">Blog</a></li>
+												<li class="mb-2"><a href="#">Portofolio</a></li>
+												<li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
+												<li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+												<li class="mb-2"><a href="#">FAQs</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="copyright">
+							<p class="mb-0 pt-md-5 pb-3 mt-2" id="text-copyright">
+								Copyright &copy; 2021 Supernova Digipack
+								<span id="hide-on-mobile">-</span> PT Supernova Flexible
+								Packaging
+							</p>
+						</div>
+						<div class="floating position-fixed">
+							<a href="#"
+								><img src="images/wa.svg" alt="" class="img-fluid"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function (b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] ||
+					(b[l] = function () {
+						(b[l].q = b[l].q || []).push(arguments);
+					});
+				b[l].l = +new Date();
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r);
+			})(window, document, 'script', 'ga');
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+		</script>
+		<script src="scripts/vendor.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
