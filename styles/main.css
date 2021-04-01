@@ -69,11 +69,21 @@ body {
 .head-title {
 	margin-top: 30px;
 	margin-bottom: 70px;
+	/* background: #1057db; */
+	background: linear-gradient(
+		90deg,
+		rgba(16, 87, 219, 1) 35%,
+		rgba(52, 131, 247, 1) 100%
+	);
+	width: 100%;
 }
 
 .head-title img {
-	height: auto;
 	width: 100%;
+}
+
+.relative {
+	position: relative;
 }
 
 .profile-nav .profile-title-no-underline {
@@ -85,7 +95,6 @@ body {
 }
 
 .profile-nav p {
-	font-family: 'Poppins';
 	margin-top: 31px;
 	font-size: 18px;
 	line-height: 27px;
@@ -154,7 +163,7 @@ section.profile .profile-desc {
 }
 
 .after-misi img {
-	width: 83%;
+	width: 100%;
 	height: auto;
 }
 
@@ -164,15 +173,15 @@ section.teknologi {
 }
 
 section.teknologi .img-teknologi img {
-	width: 70%;
+	max-width: 100%;
 	height: auto;
 }
 
 section.teknologi .dot img {
 	position: absolute;
 	top: 0;
-	padding-top: 50px;
-	left: 120px;
+	/* padding-top: 50px; */
+	left: 10px;
 	width: 6%;
 }
 

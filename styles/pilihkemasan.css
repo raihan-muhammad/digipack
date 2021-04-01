@@ -1,6 +1,12 @@
 .banner {
 	margin-top: 30px;
 	margin-bottom: 50px;
+	background: linear-gradient(
+		90deg,
+		rgba(16, 87, 219, 1) 35%,
+		rgba(52, 131, 247, 1) 100%
+	);
+	width: 100%;
 }
 
 .banner img {
@@ -85,8 +91,8 @@
 	width: 100%;
 	/* height: calc(1.5em + .75rem + 2px); */
 	padding: 0.675rem 0.75rem;
-	font-size: 14px;
-	font-weight: 300;
+	font-size: 16px;
+	font-weight: 400;
 	line-height: 1.5;
 	/* color: #c0c4cd; */
 	background-color: #fff;
@@ -96,10 +102,13 @@
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	text-decoration: none;
 	outline: none;
+	color: #312d75;
 }
 
 .custom-form-control::placeholder {
 	color: #c0c4cd;
+	font-size: 14px;
+	font-weight: 300 !important;
 }
 
 .select-form {
