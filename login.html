@@ -13,7 +13,7 @@
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="stylesheet" href="styles/vendor.css" />
 		<link rel="stylesheet" href="styles/main.css" />
-		<link rel="stylesheet" href="styles/blog.css" />
+		<link rel="stylesheet" href="styles/login.css" />
 		<script src="scripts/modernizr.js"></script>
 	</head>
 	<body>
@@ -57,7 +57,7 @@
 										>Pilihan Kemasan</a
 									>
 								</li>
-								<li class="nav-item active">
+								<li class="nav-item">
 									<a class="nav-link" href="#">Blog</a>
 								</li>
 							</ul>
@@ -80,186 +80,80 @@
 				</div>
 			</div>
 			<div class="content-wrapper pt-5 mt-5">
-				<div class="head-title wow fadeInDown">
-					<div class="container">
-						<img src="./images/blog.png" alt="blog" />
-					</div>
+				<div class="logo container">
+					<img src="./images/logo-big.jpg" alt="" />
 				</div>
-				<div class="search container wow fadeInDown">
-					<div class="input-group">
-						<input
-							type="text"
-							class="form-control"
-							placeholder="Cari artikel disini"
-						/>
-						<div class="input-group-append">
-							<span class="input-group-text">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-search"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+				<div class="login-form container">
+					<h3>Daftar Akun Baru</h3>
+					<div class="row">
+						<div class="col-6">
+							<form action="">
+								<div class="form-group">
+									<label for="nama">Nama Lengkap</label>
+									<input
+										type="text"
+										class="form-control custom"
+										id="nama"
+										placeholder="Nama Lengkap"
 									/>
-								</svg>
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="blog-menu wow fadeInDown">
-					<div class="container">
-						<div class="row">
-							<div class="col-4">
-								<a href="">
-									<div class="pic">
-										<img src="./images/blog-pict-1.png" alt="" />
+								</div>
+								<div class="form-group">
+									<label for="email">Email address</label>
+									<input
+										type="email"
+										class="form-control custom"
+										id="email"
+										placeholder="Alamat Email"
+									/>
+								</div>
+								<div class="password">
+									<label for="password">Password</label>
+									<div class="input-pass">
+										<div class="input-group">
+											<input type="text" placeholder="Password" />
+											<div class="input-group-append">
+												<span class="input-group-text">
+													<i class="fa fa-eye-slash" aria-hidden="true"></i>
+												</span>
+											</div>
+										</div>
 									</div>
-									<div class="pic-summary">Healthy Food</div>
-								</a>
-							</div>
-							<div class="col-4">
-								<a href="">
-									<div class="pic">
-										<img src="./images/blog-pict-2.png" alt="" />
-									</div>
-									<div class="pic-summary">Frozen Food</div>
-								</a>
-							</div>
-							<div class="col-4">
-								<a href="">
-									<div class="pic">
-										<img src="./images/blog-pict-3.png" alt="" />
-									</div>
-									<div class="pic-summary">Kopi & Teh</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+								</div>
+								<button
+									class="btn btn-daftar"
+									data-toggle="modal"
+									type="button"
+									data-target="#modalLogin"
+								>
+									Lanjut
+								</button>
+								<h4>
+									Sudah punya akun ? <span><a href="">Masuk Sekarang</a></span>
+								</h4>
+								<div class="alternative d-flex align-items-center">
+									Atau Daftar Menggunakan
 
-				<div class="blog-article wow fadeInDown">
-					<div class="container">
-						<div class="row">
-							<div class="col-6">
-								<div class="pic">
-									<img src="./images/article-1.png" alt="" />
+									<div class="btn-alter ml-4">
+										<button class="btn border mr-3">
+											<img src="./images/google.png" alt="" />
+										</button>
+										<button class="btn border">
+											<img src="./images/fb.png" alt="" />
+										</button>
+									</div>
 								</div>
-								<div class="article-title">
-									Apa sih pentingnya analisa peluang usaha?
+								<div class="line"></div>
+								<div class="text-alert">
+									This site is protected by reCAPTCHA and the Google
+									<span><a href=""> Privacy Policy</a></span> and
+									<span><a href="">Terms of Service</a></span> apply.
 								</div>
-								<div class="article-desc">
-									Kalau kamu lagi berencana membangun sebuah usaha, penting
-									melakukan analisis peluang usaha sebelum menjalankan usaha
-									yang sukses dan berkelanjutan. Hal ini tentu berlaku...
-								</div>
-								<div class="blog-nav d-flex align-items-center">
-									<a href="blog-detail.html">
-										Baca Selengkapnya
-										<img src="./images/arrow.png" alt="" />
-									</a>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="pic">
-									<img src="./images/article-2.png" alt="" />
-								</div>
-								<div class="article-title">
-									Wajib dicoba! 10 jenis keripik unik untuk usaha yang laris di
-									pasar online
-								</div>
-								<div class="article-desc">
-									Bisnis usaha aneka keripik bukanlah usaha yang sulit untuk
-									dimulai. Karena selain membutuhkan modal yang relatif kecil
-									dan peralatan yang tidak ribet, pasarnya pun jelas sudah
-									ada...
-								</div>
-								<div class="blog-nav d-flex align-items-center">
-									<a href="blog-detail.html">
-										Baca Selengkapnya
-										<img src="./images/arrow.png" alt="" />
-									</a>
-								</div>
-							</div>
-							<div class="separator"></div>
-							<div class="col-6">
-								<div class="pic">
-									<img src="./images/article-3.png" alt="" />
-								</div>
-								<div class="article-title">
-									Apa sih pentingnya analisa peluang usaha?
-								</div>
-								<div class="article-desc">
-									Kalau kamu lagi berencana membangun sebuah usaha, penting
-									melakukan analisis peluang usaha sebelum menjalankan usaha
-									yang sukses dan berkelanjutan. Hal ini tentu berlaku...
-								</div>
-								<div class="blog-nav d-flex align-items-center">
-									<a href="blog-detail.html">
-										Baca Selengkapnya
-										<img src="./images/arrow.png" alt="" />
-									</a>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="pic">
-									<img src="./images/article-4.png" alt="" />
-								</div>
-								<div class="article-title">
-									Kegunaan pakai Vacuum Packaging untuk usaha frozen food
-								</div>
-								<div class="article-desc">
-									Untuk kamu yang memiliki banyak waktu luang karena pandemi
-									ini, kamu bisa mulai usaha kecil-kecilan untuk menambah
-									penghasilan. Terlebih yang memiliki bakat memasak...
-								</div>
-								<div class="blog-nav d-flex align-items-center">
-									<a href="blog-detail.html">
-										Baca Selengkapnya
-										<img src="./images/arrow.png" alt="" />
-									</a>
-								</div>
-							</div>
+							</form>
 						</div>
-					</div>
-				</div>
-				<div class="page d-flex justify-content-center">
-					<div class="d-flex align-items-center">
-						<div class="prev d-flex align-items-center">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								fill="currentColor"
-								class="bi bi-chevron-left"
-								viewBox="0 0 16 16"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-								/>
-							</svg>
-							<div class="prev">Prev</div>
-						</div>
-						<div class="num-page">1</div>
-						<div class="next d-flex align-items-center">
-							<div class="next">Next</div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								fill="currentColor"
-								class="bi bi-chevron-right"
-								viewBox="0 0 16 16"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-								/>
-							</svg>
+						<div class="col-6">
+							<div class="img-hero">
+								<img src="./images/login-img.jpg" alt="" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -278,6 +172,96 @@
 								alt=""
 								class="img-fluid wow slideInRight"
 						/></a>
+					</div>
+				</div>
+
+				<!-- Modal login -->
+				<div
+					class="modal fade"
+					id="modalLogin"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Masuk</h5>
+								<!-- <button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button> -->
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<div class="form-group">
+										<label for="nama">Nama Lengkap</label>
+										<input
+											type="text"
+											class="form-control custom"
+											id="nama"
+											placeholder="Nama Lengkap"
+										/>
+									</div>
+									<div class="form-group">
+										<label for="email">Email address</label>
+										<input
+											type="email"
+											class="form-control custom"
+											id="email"
+											placeholder="Alamat Email"
+										/>
+									</div>
+									<div class="password">
+										<label for="password">Password</label>
+										<div class="input-pass">
+											<div class="input-group">
+												<input type="text" placeholder="Password" />
+												<div class="input-group-append">
+													<span class="input-group-text">
+														<i class="fa fa-eye-slash" aria-hidden="true"></i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button
+										class="btn btn-daftar"
+										data-toggle="modal"
+										type="button"
+										data-target="#modalLogin"
+									>
+										Lanjut
+									</button>
+									<h4>
+										Belum punya akun ?
+										<span><a href="">Daftar Sekarang</a></span>
+									</h4>
+									<div class="alternative d-flex align-items-center">
+										Atau Daftar Menggunakan
+
+										<div class="btn-alter ml-4">
+											<button class="btn border mr-3">
+												<img src="./images/google.png" alt="" />
+											</button>
+											<button class="btn border">
+												<img src="./images/fb.png" alt="" />
+											</button>
+										</div>
+									</div>
+									<div class="line"></div>
+									<div class="text-alert">
+										This site is protected by reCAPTCHA and the Google
+										<span><a href=""> Privacy Policy</a></span> and
+										<span><a href="">Terms of Service</a></span> apply.
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 
