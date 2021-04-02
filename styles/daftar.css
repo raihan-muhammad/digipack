@@ -145,3 +145,7 @@ h4 span a {
 	float: right;
 	margin-top: -50px;
 }
+
+.login-form .password .input-pass input {
+	padding: 5px 20px;
+}
