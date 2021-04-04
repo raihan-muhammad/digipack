@@ -119,3 +119,58 @@
 	font-weight: 600;
 	font-size: 24px;
 }
+
+@media (max-width: 576px) {
+	.back-home {
+		margin-top: 20px;
+		padding-left: 25px;
+	}
+
+	.back-home a {
+		font-size: 14px;
+	}
+
+	.back-home a img {
+		width: 50px;
+		margin-right: 10px;
+	}
+
+	.search {
+		width: 85%;
+	}
+
+	.search .input-group input {
+		padding: 0px;
+	}
+
+	.blog-content {
+		margin-top: 30px;
+		padding: 0px 15px;
+		margin-bottom: 90px;
+	}
+
+	.blog-content .content-info {
+		margin-top: 25px;
+	}
+
+	.blog-content .content-info .title {
+		font-size: 16px;
+	}
+
+	.blog-content .content-info .info-writer {
+		margin-top: 15px;
+		font-size: 10px;
+	}
+
+	.line {
+		margin-bottom: 5px !important;
+	}
+
+	.blog-content .content-desc .sub-content {
+		font-size: 12px;
+	}
+
+	.blog-content .content-desc .section {
+		font-size: 14px;
+	}
+}

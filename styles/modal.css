@@ -1,4 +1,4 @@
-label {
+.modal-dialog .modal-content .modal-body form label {
 	font-weight: 500;
 	font-size: 16px;
 }
@@ -61,7 +61,7 @@ label {
 	font-weight: 500;
 	font-size: 12px;
 	padding: 10px 40px;
-	margin: 40px 0px;
+	margin: 20px 0px 30px 0px;
 }
 
 .btn-daftar:hover {
@@ -89,8 +89,8 @@ h4 {
 	border-radius: 6px;
 }
 
-.border img {
-	padding: 0px 10px;
+.fb img {
+	padding: 4px 5px;
 }
 
 .alternative {
@@ -102,7 +102,7 @@ h4 {
 .line {
 	border: 1px solid #c0c4cd;
 	margin-top: 15px;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 }
 
 .modal-dialog .modal-content .modal-body .text-alert {
@@ -159,6 +159,10 @@ h4 {
 	width: 25px;
 }
 
+.no-display-web {
+	display: none;
+}
+
 .modal-dialog
 	.modal-content
 	.modal-body
@@ -170,8 +174,65 @@ h4 {
 	margin-left: 20px;
 }
 
+.modal-dialog .modal-content .modal-body small a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #312d75;
+	font-weight: 400;
+	margin: 20px 0px !important;
+}
+
+.password_help {
+	margin-top: 20px;
+}
+
 .text {
 	font-weight: 400;
 	font-size: 14px;
 	margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+	.modal-dialog .modal-content .modal-body form {
+		padding: 10px 0px 0px 0px;
+	}
+
+	.input-pass input {
+		width: 70%;
+	}
+
+	.no-display-mobile {
+		display: none;
+	}
+
+	.show-mobile {
+		display: block;
+	}
+
+	.modal-dialog .modal-content .modal-header .modal-title {
+		padding: 0px;
+	}
+
+	h4 {
+		font-weight: 400;
+		font-size: 14px;
+		margin-bottom: 25px;
+	}
+
+	.modal-dialog .modal-content .modal-body .border img {
+		padding: 5px 10px;
+		width: 100%;
+	}
+
+	.modal-dialog .modal-content .modal-body .text {
+		font-weight: 400;
+		font-size: 12px;
+		margin-bottom: 5px;
+		margin-top: 25px;
+	}
+
+	.modal-dialog .modal-content .modal-body .text-alert {
+		font-size: 12px;
+		margin-top: 15px;
+	}
 }

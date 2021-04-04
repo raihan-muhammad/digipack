@@ -654,16 +654,7 @@
 							<div class="modal-body">
 								<form action="">
 									<div class="form-group">
-										<label for="nama">Nama Lengkap</label>
-										<input
-											type="text"
-											class="form-control custom"
-											id="nama"
-											placeholder="Nama Lengkap"
-										/>
-									</div>
-									<div class="form-group">
-										<label for="email">Email address</label>
+										<label for="email">Email</label>
 										<input
 											type="email"
 											class="form-control custom"
@@ -684,32 +675,67 @@
 											</div>
 										</div>
 									</div>
+									<small
+										id="emailHelp"
+										class="form-text text-muted password_help"
+									>
+										<a href="">Lupa Password ?</a>
+									</small>
 									<button class="btn btn-daftar">Lanjut</button>
-									<h4>
-										Belum punya akun ?
-										<span><a href="">Ayo Daftar</a></span>
-									</h4>
-									<div class="alternative d-flex align-items-center">
-										Atau Daftar Menggunakan
+									<div class="show-web no-display-mobile">
+										<h4>
+											Belum punya akun ?
+											<span><a href="">Ayo Daftar</a></span>
+										</h4>
+										<div class="alternative d-flex align-items-center">
+											Atau Daftar Menggunakan
 
-										<div class="btn-alter ml-4">
-											<button class="btn border mr-3">
-												<img src="./images/google.png" alt="" />
-											</button>
-											<button class="btn border">
-												<img src="./images/fb.png" alt="" />
-											</button>
+											<div class="btn-alter ml-4 d-flex align-items-center">
+												<button class="btn border mr-3 google">
+													<img src="./images/google.png" alt="" />
+												</button>
+												<button class="btn border fb">
+													<img src="./images/fb.png" alt="" />
+												</button>
+											</div>
+										</div>
+										<div class="line"></div>
+										<div class="text">
+											Dengan melakukan login, anda setuju dengan Syarat &
+											Ketentuan Supernova Digipack.
+										</div>
+										<div class="text-alert">
+											This site is protected by reCAPTCHA and the Google
+											<span><a href=""> Privacy Policy</a></span> and
+											<span><a href="">Terms of Service</a></span> apply.
 										</div>
 									</div>
-									<div class="line"></div>
-									<div class="text">
-										Dengan melakukan login, anda setuju dengan Syarat &
-										Ketentuan Supernova Digipack.
-									</div>
-									<div class="text-alert">
-										This site is protected by reCAPTCHA and the Google
-										<span><a href=""> Privacy Policy</a></span> and
-										<span><a href="">Terms of Service</a></span> apply.
+									<div class="show-mobile no-display-web">
+										<h4>Atau masuk dengan</h4>
+										<div class="alternative">
+											<div class="btn-alter d-flex">
+												<button class="btn border mr-3">
+													<img src="./images/google.png" alt="" />
+												</button>
+												<button class="btn border">
+													<img src="./images/fb.png" alt="" />
+												</button>
+											</div>
+										</div>
+										<h4>
+											Belum punya akun ?
+											<span><a href="">Ayo Daftar</a></span>
+										</h4>
+										<div class="line"></div>
+										<div class="text">
+											Dengan melakukan login, anda setuju dengan Syarat &
+											Ketentuan Supernova Digipack.
+										</div>
+										<div class="text-alert">
+											This site is protected by reCAPTCHA and the Google
+											<span><a href=""> Privacy Policy</a></span> and
+											<span><a href="">Terms of Service</a></span> apply.
+										</div>
 									</div>
 								</form>
 							</div>

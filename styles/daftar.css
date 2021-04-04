@@ -122,6 +122,10 @@ h4 span a {
 	font-size: 14px;
 } */
 
+.btn-alter {
+	margin-left: 25px;
+}
+
 .line {
 	border: 1px solid #c0c4cd;
 	margin-top: 15px;
@@ -148,4 +152,40 @@ h4 span a {
 
 .login-form .password .input-pass input {
 	padding: 5px 20px;
+}
+
+@media (max-width: 576px) {
+	.logo {
+		margin-top: 40px;
+	}
+
+	.logo img {
+		width: 100px;
+	}
+
+	.login-form h3 {
+		margin-top: 20px;
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.text-alert {
+		font-size: 12px;
+	}
+
+	.login-form .img-hero {
+		display: flex;
+		justify-content: center;
+		margin-top: 80px;
+		margin-bottom: 160px;
+	}
+
+	.border img {
+		width: 55px;
+		padding: 2px 5px;
+	}
+
+	.btn-alter {
+		margin-left: 0px;
+	}
 }
