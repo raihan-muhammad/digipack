@@ -1,11 +1,7 @@
 .banner {
 	margin-top: 30px;
 	margin-bottom: 60px;
-	background: linear-gradient(
-		90deg,
-		rgba(16, 87, 219, 1) 35%,
-		rgba(52, 131, 247, 1) 100%
-	);
+	background: #2a6ff5;
 	width: 100%;
 }
 

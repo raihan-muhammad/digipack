@@ -58,7 +58,7 @@
 	border: none;
 	color: #c0c4cd;
 	cursor: pointer;
-	padding-left: 40px;
+	padding-left: 0px;
 }
 
 .btn-daftar {
@@ -96,8 +96,16 @@ h4 {
 	border-radius: 6px;
 }
 
+.border img {
+	padding: 0px 10px;
+}
+
+.pb-8px {
+	padding-bottom: 8px !important;
+}
+
 .fb img {
-	padding: 4px 5px;
+	padding-bottom: 2px;
 }
 
 .alternative {
@@ -241,5 +249,15 @@ h4 {
 	.modal-dialog .modal-content .modal-body .text-alert {
 		font-size: 12px;
 		margin-top: 15px;
+	}
+
+	.modal-dialog
+		.modal-content
+		.modal-body
+		.password
+		.input-group
+		.input-group-append
+		.input-group-text {
+		padding-left: 40px;
 	}
 }
