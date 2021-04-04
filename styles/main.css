@@ -5,6 +5,10 @@ body {
 	font-weight: 500;
 }
 
+.no-display-mobile-web {
+	display: none;
+}
+
 #wrapper {
 	overflow: hidden;
 }
@@ -102,6 +106,7 @@ body {
 }
 
 section.profile {
+	margin-top: 35px;
 	padding-bottom: 55px;
 }
 
@@ -1357,7 +1362,7 @@ section.pabrik .right .info a:hover {
 
 @media (max-width: 576px) {
 	.head-title {
-		margin-top: 0px;
+		margin-top: -30px;
 		margin-bottom: 35px;
 	}
 
@@ -1709,6 +1714,22 @@ section.pabrik .right .info a:hover {
 		font-size: 14px;
 		text-decoration: none;
 		color: rgb(49, 45, 117);
+	}
+
+	.show-mobile {
+		display: block;
+	}
+
+	.show-mobile img {
+		width: 100%;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.no-display-mobile {
+		display: none;
 	}
 }
 

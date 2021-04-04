@@ -419,6 +419,7 @@
 
 	#show-mobile button {
 		width: 100%;
+		margin-top: 60px;
 	}
 
 	#hide-mobile {
