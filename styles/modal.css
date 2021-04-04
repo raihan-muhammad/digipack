@@ -43,15 +43,22 @@
 	outline: none;
 }
 
-.password input {
+.modal-dialog .modal-content .modal-body .password input {
 	border: none;
 }
 
-.password .input-group .input-group-append .input-group-text {
+.modal-dialog
+	.modal-content
+	.modal-body
+	.password
+	.input-group
+	.input-group-append
+	.input-group-text {
 	background: none !important;
 	border: none;
 	color: #c0c4cd;
 	cursor: pointer;
+	padding-left: 40px;
 }
 
 .btn-daftar {
