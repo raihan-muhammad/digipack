@@ -5,7 +5,7 @@ body {
 	font-weight: 500;
 }
 
-.no-display-mobile-web {
+.no-display-web {
 	display: none;
 }
 
@@ -1471,7 +1471,7 @@ section.pabrik .right .info a:hover {
 
 	section.teknologi .dot img {
 		position: absolute;
-		margin-top: -65px;
+		margin-top: -35px;
 		left: 25px;
 		width: 13%;
 	}
@@ -1496,7 +1496,7 @@ section.pabrik .right .info a:hover {
 
 	section.pabrik .title-section img {
 		width: 20%;
-		top: -10px;
+		top: -30px;
 		right: -8px;
 		overflow-x: visible;
 	}
