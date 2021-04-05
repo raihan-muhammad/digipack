@@ -3,6 +3,10 @@
 	font-size: 16px;
 }
 
+.modal-header .close {
+	padding: 20px 50px !important;
+}
+
 .custom {
 	border: 1px solid #c0c4cd;
 	box-sizing: border-box;
@@ -258,6 +262,10 @@ h4 {
 		.input-group
 		.input-group-append
 		.input-group-text {
-		padding-left: 40px;
+		padding-left: 20px;
+	}
+
+	.modal-header .close {
+		padding: 20px 15px !important;
 	}
 }

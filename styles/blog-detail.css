@@ -21,7 +21,8 @@
 }
 
 .back-home a img {
-	margin-right: 20px;
+	width: 50px;
+	margin-right: 10px;
 }
 
 .search {
@@ -119,7 +120,7 @@
 @media (max-width: 576px) {
 	.back-home {
 		margin-top: 20px;
-		padding-left: 25px;
+		padding-left: 20px;
 	}
 
 	.back-home a {
@@ -127,12 +128,13 @@
 	}
 
 	.back-home a img {
-		width: 50px;
+		width: 40px;
+		padding-bottom: 2px;
 		margin-right: 10px;
 	}
 
 	.search {
-		width: 85%;
+		width: 90%;
 	}
 
 	.search .input-group input {

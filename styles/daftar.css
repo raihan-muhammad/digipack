@@ -32,6 +32,24 @@
 	cursor: pointer;
 }
 
+.login-form .custom {
+	border: 1px solid #c0c4cd;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.login-form .custom::placeholder {
+	font-weight: 300;
+	font-size: 14px;
+	color: #c0c4cd;
+}
+
+.login-form .custom:focus {
+	box-shadow: none;
+}
+
 /* 
 label {
 	font-weight: 500;
@@ -145,7 +163,7 @@ h4 span a {
 .line {
 	border: 1px solid #c0c4cd;
 	margin-top: 15px;
-	margin-bottom: 25px;
+	margin-bottom: 30px !important;
 }
 
 .text-alert {
@@ -185,8 +203,13 @@ h4 span a {
 		margin-bottom: 30px;
 	}
 
-	.text-alert {
+	.login-form .text {
 		font-size: 12px;
+	}
+
+	.login-form .text-alert {
+		font-size: 12px;
+		margin-top: 15px;
 	}
 
 	.login-form .img-hero {
@@ -197,12 +220,12 @@ h4 span a {
 	}
 
 	.login-form .border img {
-		width: 55px;
+		/* width: 55px; */
 		padding: 2px 5px 0px 5px;
 	}
 
 	.btn-alter {
-		margin-left: 15px;
+		margin-left: 0px;
 	}
 
 	.login-form .password .input-pass input {
