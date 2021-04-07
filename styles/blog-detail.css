@@ -21,7 +21,8 @@
 }
 
 .back-home a img {
-	width: 50px;
+	width: 4%;
+	padding-bottom: 2px;
 	margin-right: 10px;
 }
 
@@ -128,9 +129,9 @@
 	}
 
 	.back-home a img {
-		width: 40px;
+		width: 10%;
 		padding-bottom: 2px;
-		margin-right: 10px;
+		margin-right: 5px;
 	}
 
 	.search {
