@@ -12,10 +12,16 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="stylesheet" href="styles/vendor.css" />
-		<link rel="stylesheet" href="styles/main.css" />
-		<link rel="stylesheet" href="./styles/pilihkemasan.css" />
-		<link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/pilih-kemasan.css" />
+    <link rel="stylesheet" href="styles/modal.css">
+		<script src="scripts/popper.min.js"></script>
+		<script src="scripts/vendor.js"></script>
+		<script src="./scripts/owl.carousel.min.js"></script>
+		<link rel="stylesheet" href="styles/owl.carousel.min.css" />
+		<link rel="stylesheet" href="styles/owl.theme.default.min.css" />
 		<script src="scripts/modernizr.js"></script>
+    <script src="scripts/main.js"></script>
 	</head>
 	<body>
 		<!--[if IE]>
@@ -54,9 +60,7 @@
 									<a class="nav-link" href="about-us.html">Tentang Kami</a>
 								</li>
 								<li class="nav-item active">
-									<a class="nav-link" href="pilih-kemasan.html"
-										>Pilihan Kemasan</a
-									>
+									<a class="nav-link" href="pilihan-kemasan-2.html">Pilihan Kemasan</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="blog.html">Blog</a>
@@ -65,12 +69,13 @@
 							<div class="menu-act my-2 my-lg-0 d-flex">
 								<ul class="pl-0 ml-0 mb-0 menu-log">
 									<li class="singin">
-										<a href="#" class="btn rounded" data-toggle="modal"
+										<a href="#" class="btn rounded"
+                    data-toggle="modal"
 										type="button"
 										data-target="#modalLogin">Masuk</a>
 									</li>
 									<li class="singup">
-										<a href="daftar.html" class="btn rounded">Daftar</a>
+										<a href="#" class="btn rounded">Daftar</a>
 									</li>
 								</ul>
 								<ul class="lang mb-0 pl-0">
@@ -82,301 +87,419 @@
 					</nav>
 				</div>
 			</div>
-		</div>
-		<div class="content-wrapper pt-5 mt-5">
-		<div class="banner wow fadeInUp no-display-mobile">
-			<div class="container">
-					<img src="./images/pilih-kemasan-title.jpg" alt="pilih kemasan" />
-				</div>
-			</div>
-		</div>
-		<div class="no-display-web show-mobile">
-			<img src="./images/pilih-kemasan-title.jpg"alt="pilih kemasan" />
-		</div>
-			<div class="pilihan-kemasan container">
-				<div class="row d-flex justify-content-around">
-					<button type="button" class="btn btn-pilih">Pilihan Kemasan</button>
-					<button type="button" class="btn btn-kemasan choose-packaging" id="centralmd">Central Seal</button>
-					<button type="button" class="btn btn-kemasan choose-packaging active-packaging" id="standingmd">
-						Standing Pouch
-					</button>
-					<button type="button" class="btn btn-kemasan choose-packaging" id="vacuummd">Vacuum Pack</button>
-					<button type="button" class="btn btn-kemasan choose-packaging" id="gussetmd">Gusset Pouch</button>
-					<button type="button" class="btn btn-kemasan choose-packaging" id="threemd">Three Block Seal</button>
-				</div>
-			</div>
-			<div id="show-mobile">
-				<a
-							href="#bottom-sheet"
-							class="btn btn-pilih w-full d-block d-md-none padding-button mr-3 choose"
-							>Pilihan Kemasan</a
-						>
-			</div>
-			<div class="produk">
-				<div class="container">
-					<div class="row col-reverse">
-						<div class="col-12 col-md-6 d-flex justify-content-end">
-							<div class="foto-produk d-flex justify-content-center">
-								<img src="./images/produk-standingpouch.png" alt="" />
-							</div>
-						</div>
-						<div class="col-12 col-md-6">
-							<div class="info-produk">
-								<h1>Standing Pouch</h1>
-								<div class="produk-desc">
-									Packaging Standing Pouch merupakan kemasan yang bisa berdiri
-									dan bentuknya menyerupai kantung. Standing Pouch dari Digipack
-									by Supernova dapat dilengkapi dengan zipper lock yang bisa
-									dibuka atau ditutup kembali. Selain praktis, packaging
-									Standing Pouch juga kuat, anti lecet, dan tahan benturan
-									sehingga produk aman dari kebocoran. Jadi bisa dipastikan
-									produk yang dikemas menggunakan packaging ini akan terjaga
-									kualitasnya.
-								</div>
-							</div>
-						</div>
+
+			<div class="content-wrapper pt-2">
+				<div class="head-title-banner w-100">
+					<div class="container">
+						<img src="images/pilih-kemasan-title.jpg" alt="" />
 					</div>
 				</div>
-			</div>
-			<div class="kebutuhan">
-				<h1 class="title">Cek kebutuhan Kemasan</h1>
-				<div class="form-kemasan container">
+				<div class="container">
+					<div class="d-flex flex-column flex-md-row mb-3">
+						<a
+							href="#bottom-sheet"
+							class="btn secondary-button w-full d-block d-md-none padding-button mr-3 choose"
+							>Pilihan Kemasan</a
+						>
+						<a
+							class="btn secondary-button w-full d-none d-md-block padding-button mr-3 choose"
+							>Pilihan Kemasan</a
+						>
+						<div class="d-md-flex d-none">
+							<button
+								type="button"
+								id="centralmd"
+								class="btn primary-button nav-btn w-full choose-packaging-btn mr-3"
+							>
+								Central Seal
+							</button>
+							<button
+								type="button"
+								id="standingmd"
+								class="btn primary-button nav-btn w-full choose-packaging-btn mr-3"
+							>
+								Standing Pouch
+							</button>
+							<button
+								type="button"
+								id="vacuummd"
+								class="btn primary-button nav-btn w-full choose-packaging-btn mr-3"
+							>
+								Vacuum Pack
+							</button>
+							<button
+								type="button"
+								id="gussetmd"
+								class="btn primary-button nav-btn w-full choose-packaging-btn mr-3"
+							>
+								Gusset Pouch
+							</button>
+							<button
+								type="button"
+								id="threemd"
+								class="btn primary-button nav-btn w-full choose-packaging-btn"
+							>
+								Three Block Seal
+							</button>
+						</div>
+					</div>
+        </div>
+
 					<div class="row">
-						<div class="col-md-6 col-xs-12">
+						<div
+							class="col-12 col-md-6 pt-0 pt-md-5 pb-5 py-md-5 pl-15rem order-2 order-md-1 img-produk"
+						>
+							<div class="owl-carousel border-rounded foto-produk">
+								<img
+									src="images/standing-pouch.png"
+									class="carousel-img d-block m-auto"
+									alt=""
+								/>
+								<img
+									src="images/standing-pouch.png"
+									class="carousel-img d-block m-auto"
+									alt=""
+								/>
+								<img
+									src="images/standing-pouch.png"
+									class="carousel-img d-block m-auto"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 py-2 order-1 order-md-2">
+							<h2 class="text-center text-md-left title-produk product-name">
+								Standing Pouch
+							</h2>
+							<p
+								class="font-weight-light p-description text-center text-md-left"
+							>
+								Packaging Standing Pouch merupakan kemasan yang bisa berdiri dan
+								bentuknya menyerupai kantung. Standing Pouch dari Digipack by
+								Supernova dapat dilengkapi dengan zipper lock yang bisa dibuka
+								atau ditutup kembali. Selain praktis, packaging Standing Pouch
+								juga kuat, anti lecet, dan tahan benturan sehingga produk aman
+								dari kebocoran. Jadi bisa dipastikan produk yang dikemas
+								menggunakan packaging ini akan terjaga kualitasnya.
+							</p>
+						</div>
+					</div>
+				<div class="form-produk">
+          	<h4 class="text-center">Cek Kebutuhan Kemasan</h4>
+					<div class="red-border mx-auto mt-4"></div>
+					<div class="row mt-5 py-3">
+						<div class="col-md-6 position-relative">
 							<div class="kemasan">
 								<div class="produk-img d-flex align-items-center">
-									<img src="./images/standing-pouch-big.png" alt="">
+									<img src="./images/standing-pouch-big.png" alt="" />
 								</div>
 								<div class="kemasan-elipse">
-									<img src="./images/eliipse-kemasan.png" alt="">
+									<img src="./images/eliipse-kemasan.png" alt="" />
 								</div>
 								<div class="kemasan-pattern">
-									<img src="./images/pattern-1.png" class="pattern-1" alt="">
-									<img src="./images/pattern-2.png" class="pattern-2" alt="">
+									<img src="./images/pattern-1.png" class="pattern-1" alt="" />
+									<img src="./images/pattern-2.png" class="pattern-2" alt="" />
 								</div>
 								<div class="kemasan-shape">
-									<img src="./images/Shape.png" alt="" class="shape-1">
-									<img src="./images/Shape.png" alt="" class="shape-2">
+									<img src="./images/Shape.png" alt="" class="shape-1" />
+									<img src="./images/Shape.png" alt="" class="shape-2" />
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-xs-12 mobile">
-							<div class="produk-title">Standing Pouch</div>
-							<form>
-								<div class="form-group">
-									<label for="produk">
-										Your Product name
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-info-circle-fill"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-											/>
-										</svg>
-									</label>
+						<div class="col-md-6 mt-5 mt-md-0">
+							<h2 class="text-center text-md-left product-name">
+								Standing Pouch
+							</h2>
+							<form action="" class="w-100">
+								<div class="form-group mt-4">
+									<label for="exampleFormControlInput1"
+										>Your Product Name</label
+									>
+									<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+									<img
+										src="images/info.svg"
+										title="Info Nama"
+										class="ml-2"
+										alt=""
+										data-toggle="tooltip"
+										data-placement="top"
+									/>
 									<input
-										type="text"
-										class="custom-form-control"
+										type="name"
+										class="form-control form-control-lg product-form mt-2"
+										id="exampleFormControlInput1"
 										placeholder="Your Product Name"
 									/>
 								</div>
-								<div class="mb-3">
-									<label for="Grade" class="form-label">
-										Grade
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-info-circle-fill"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-											/>
-										</svg>
-									</label>
-									<select class="select-form">
-										<option value=''>
-											-- Choose Grade --
-										</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									</select>
-								</div>
-								<div class="mb-3">
-									<label for="accesories" class="form-label">
-										Accesories
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="16"
-											height="16"
-											fill="currentColor"
-											class="bi bi-info-circle-fill"
-											viewBox="0 0 16 16"
-										>
-											<path
-												d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-											/>
-										</svg>
-									</label>
-									<select class="select-form">
-										<option value=''>-- Choose Accesories --</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									</select>
-								</div>
-								<div class="mb-3">
-									<label for="Size" class="form-label"> Size </label>
-									<div class="d-flex align-items-center">
-										<select class="select-form">
-											<option value=''>-- Choose Size --</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
-										</select>
-									</div>
-								</div>
-								<label for="quantity" class="form-label"> Quantity </label>
-								<div class="input-group mb-3">
-									<div class="input-group-prepend">
-										<span class="input-group-text">-</span>
-									</div>
-									<input
-										type="number"
-										class="form-control"
-										placeholder="0"
-										style="text-align: center"
+								<label for="selectgrade">Grade</label>
+								<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+								<img
+									src="images/info.svg"
+									title="Info Grade"
+									class="ml-2"
+									alt=""
+									data-toggle="tooltip"
+									data-placement="top"
+								/>
+								<select
+									id="selectgrade"
+									required
+									class="form-control form-control-lg mt-2 product-form select"
+								>
+									<!-- KOSONGKAN VALUE PADA OPTION PERTAMA (PLACEHOLDER) -->
+									<option value="">-- Choose Grade --</option>
+									<option value="a">Grade 1</option>
+									<option value="b">Grade 2</option>
+									<option value="C">Grade 3</option>
+								</select>
+								<label for="selectacc" class="mt-2">Accesories</label>
+								<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+								<img
+									src="images/info.svg"
+									title="Info Accesories"
+									class="ml-2"
+									alt=""
+									data-toggle="tooltip"
+									data-placement="top"
+								/>
+								<select
+									id="selectacc"
+									required
+									class="form-control form-control-lg mt-2 product-form select"
+								>
+									<!-- KOSONGKAN VALUE PADA OPTION PERTAMA (PLACEHOLDER) -->
+									<option value="">-- Choose Accesories --</option>
+									<option value="a">Accesories 1</option>
+									<option value="b">Accesories 2</option>
+									<option value="C">Accesories 3</option>
+								</select>
+								<label for="selectsize" class="mt-2">Size</label>
+								<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+								<img
+									src="images/info.svg"
+									title="Info Size"
+									class="ml-2"
+									alt=""
+									data-toggle="tooltip"
+									data-placement="top"
+								/>
+								<select
+									id="selectsize"
+									required
+									class="form-control form-control-lg mt-2 product-form select"
+								>
+									<!-- KOSONGKAN VALUE PADA OPTION PERTAMA (PLACEHOLDER) -->
+									<option value="">-- Choose Size --</option>
+									<option value="a">Size 1</option>
+									<option value="b">Size 2</option>
+									<option value="C">Size 3</option>
+								</select>
+								<div class="form-group mt-2">
+									<label for="qty">Quantity</label>
+									<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+									<img
+										src="images/info.svg"
+										title="Info Quantity"
+										class="ml-2"
+										alt=""
+										data-toggle="tooltip"
+										data-placement="top"
 									/>
-									<div class="input-group-append">
-										<span class="input-group-text">+</span>
-									</div>
-								</div>
-								<div class="upload container">
-									<div class="row">
-										<div class="col-6">
-											<div class="upload-design d-flex align-items-center justify-content-center justify-content-between">
-												<div class="img-icon">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-image-fill"
-														viewBox="0 0 16 16"
-													>
-														<path
-															d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"
-														/>
-													</svg>
-												</div>
-												<p>Upload Design</p>
-												<div class="info-icon">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-info-circle-fill"
-														viewBox="0 0 16 16"
-													>
-														<path
-															d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-														/>
-													</svg>
-												</div>
+									<div class="input-group inline-group position-relative">
+										<div
+											class="input-group-prepend num-icon left position-absolute"
+										>
+											<div class="btn btn-minus">
+												<i class="fa fa-minus num-fa"></i>
 											</div>
 										</div>
-										<div class="col-6">
-											<div class="share-link d-flex align-items-center d-flex justify-content-between">
-												<div class="share-icon">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="20"
-														height="20"
-														fill="currentColor"
-														class="bi bi-link-45deg"
-														viewBox="0 0 16 16"
-													>
-														<path
-															d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
-														/>
-														<path
-															d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"
-														/>
-													</svg>
-												</div>
-												<p>Share Link</p>
-												<div class="info-icon">
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
-														fill="currentColor"
-														class="bi bi-info-circle-fill"
-														viewBox="0 0 16 16"
-													>
-														<path
-															d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-														/>
-													</svg>
-												</div>
+										<input
+											id="qty"
+											class="form-control form-control-lg quantity rounded num-form"
+											min="1"
+											name="quantity"
+											placeholder="0"
+											type="number"
+										/>
+										<div
+											class="input-group-append num-icon right position-absolute"
+										>
+											<div class="btn btn-plus">
+												<i class="fa fa-plus num-fa"></i>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="nav-upload">
-									<div class="choosen"></div>
-									<div class="divider"></div>
-								</div>
-								<div class="upload-file">
-									<p>Besar file maksimum 10 GB</p>
-									<p>Ekstensi file yang diperbolehkan .ai .pdf</p>
-									<input type="file" />
-								</div>
-								<div class="custom-file">
-								<div class="upload-price">
-									<div class="row">
-										<div class="col-4">
-											<h5>Unit Price*</h5>
-											<div class="inputan d-flex">
-												<div class="prefix">Rp</div>
-												<input type="number" class="unit-input" placeholder="0" />
-											</div>
-											<div class="divider-1"></div>
-										</div>
-										<div class="col-8 pl-5">
-											<h5>Unit Price*</h5>
-											<div class="inputan d-flex">
-												<div class="prefix">Rp</div>
-												<input type="number" class="unit-input" placeholder="0" />
-											</div>
-											<div class="divider-1"></div>
-										</div>
-										<div class="upload-info">
-											*Harga sudah termasuk VAT 10%.
-										</div>
-									</div>
-								</div>
-								<div class="nav-btn">
-										<a href="#">
-										<button class="btn btn-sec">Contact Us</button>
+
+								<div class="nav product-tab-choose" id="nav-tab" role="tablist">
+									<a
+										id="nav-home-tab"
+										class="product-tab left active"
+										data-toggle="tab"
+										href="#nav-home"
+										role="tab"
+										aria-controls="nav-home"
+										aria-selected="true"
+									>
+										<img src="images/img-icon.png" alt="" />
+										<span class="mx-md-3 mx-1">Upload Design</span>
+										<img
+											src="images/info.svg"
+											title="Info Upload"
+											alt=""
+											data-toggle="tooltip"
+											data-placement="top"
+											alt=""
+										/>
+										<span class="border-bottom"></span>
 									</a>
-									<button class="btn kemasan-fill no-border">Add to cart</button>
+									<a
+										id="nav-profile-tab"
+										class="product-tab right ml-md-5 ml-1"
+										data-toggle="tab"
+										href="#nav-profile"
+										role="tab"
+										aria-controls="nav-profile"
+										aria-selected="false"
+									>
+										<img src="images/link-icon.png" alt="" />
+										<span class="mx-md-3 mx-2">Share Link</span>
+										<img
+											src="images/info.svg"
+											title="Info Share Link"
+											alt=""
+											data-toggle="tooltip"
+											data-placement="top"
+											alt=""
+										/>
+										<span class="border-bottom"></span>
+									</a>
+								</div>
+
+								<div class="tab-content" id="nav-tabContent">
+									<div
+										class="tab-pane fade show active"
+										id="nav-home"
+										role="tabpanel"
+										aria-labelledby="nav-home-tab"
+									>
+										<p class="mt-2 file-hint">Besar file maksimum 10 GB</p>
+										<p class="mt-2 file-hint second">
+											Ekstensi file yang diperbolehkan .ai .pdf
+										</p>
+										<label
+											for="file-upload"
+											class="btn upload-button py-2 px-4 rounded-lg px-md-5 custom-file-upload"
+										>
+											Choose File
+										</label>
+										<input
+											id="file-upload"
+											name="upload_cont_img"
+											type="file"
+											class="d-none"
+										/>
+										<label id="file-name" class="ml-4 mt-3"
+											>No File Chosen</label
+										>
+									</div>
+									<div
+										class="tab-pane fade"
+										id="nav-profile"
+										role="tabpanel"
+										aria-labelledby="nav-profile-tab"
+									>
+										<div class="form-group mt-2">
+											<label for="exampleFormControlInput1"
+												>Your Design URL</label
+											>
+											<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+											<img
+												src="images/info.svg"
+												title="Info Design URL"
+												class="ml-2"
+												alt=""
+												data-toggle="tooltip"
+												data-placement="top"
+											/>
+											<input
+												type="url"
+												class="form-control form-control-lg product-form mt-1"
+												id="exampleFormControlInput1"
+												placeholder="Your Design URL"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="d-flex mt-4 input-price">
+									<div class="form-group group-input-price">
+										<label for="exampleFormControlInput1">Unit Price*</label>
+										<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+										<img
+											src="images/info.svg"
+											title="Info Design URL"
+											class="ml-2"
+											alt=""
+											data-toggle="tooltip"
+											data-placement="top"
+										/>
+										<div class="group">
+											<div class="inputan d-flex">
+												<div class="prefix">Rp</div>
+												<input type="text" class="unit-input" placeholder="0" />
+											</div>
+											<div class="divider-2"></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Total Price*</label>
+										<!-- MASUKKAN INFO PADA ATRIBUT TITLE -->
+										<img
+											src="images/info.svg"
+											title="Info Design URL"
+											class="ml-2"
+											alt=""
+											data-toggle="tooltip"
+											data-placement="top"
+										/>
+										<div class="group">
+											<div class="inputan d-flex">
+												<div class="prefix">Rp</div>
+												<input type="text" class="unit-input" placeholder="0" />
+											</div>
+											<div class="divider-1"></div>
+										</div>
+									</div>
+								</div>
+								<small>*Harga sudah termasuk VAT 10%.</small>
+								<div class="flex mt-4 button-form">
+									<div class="btn btn-secondary ml-4 ml-md-0 px-5">
+										Contact Us
+									</div>
+									<button class="btn btn-kemasan ml-3 px-5">Add To Cart</button>
 								</div>
 							</form>
 						</div>
 					</div>
-				</div>
-			</div>
+        </div>
 
+					<!-- s -->
+			<div id="before-footer">
+					<div class="container">
+						<a href="#" class="d-none d-sm-block"
+							><img
+								src="images/before-footer.jpg"
+								alt=""
+								class="img-fluid wow slideInRight"
+						/></a>
+						<a href="#" class="d-sm-none d-block"
+							><img
+								src="images/cta-mobile.png"
+								alt=""
+								class="img-fluid wow slideInRight"
+						/></a>
+					</div>
+				</div>
 			<div id="bottom-sheet" class="overlay-modal">
 				<aside
 					class="social"
@@ -430,22 +553,6 @@
 				>
 			</div>
 
-			<div id="before-footer">
-					<div class="container">
-						<a href="#" class="d-none d-sm-block"
-							><img
-								src="images/before-footer.jpg"
-								alt=""
-								class="img-fluid wow slideInRight"
-						/></a>
-						<a href="#" class="d-sm-none d-block"
-							><img
-								src="images/cta-mobile.png"
-								alt=""
-								class="img-fluid wow slideInRight"
-						/></a>
-					</div>
-				</div>
 
 			<div id="footer" class="">
 				<div class="container">
@@ -674,7 +781,7 @@
 			</div>
 		</div>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script type="text/javascript">
+		<script>
 			(function (b, o, i, l, e, r) {
 				b.GoogleAnalyticsObject = l;
 				b[l] ||
@@ -689,8 +796,193 @@
 			})(window, document, 'script', 'ga');
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
+		</script>
+		<script src="scripts/main.js"></script>
+		<script>
+			//CHANGE CONTENT
+			const render = () => {
+				//PRODUCT SELECT NAV DESKTOP INIT
+				const centralmd = document.getElementById('centralmd');
+				const standingmd = document.getElementById('standingmd');
+				const vacuumd = document.getElementById('vacuummd');
+				const gussetmd = document.getElementById('gussetmd');
+				const threemd = document.getElementById('threemd');
 
+				//MOBILE(BOTTOM SHEET)
+				const centralsm = document.getElementById('centralsm');
+				const standingsm = document.getElementById('standingsm');
+				const vacuusm = document.getElementById('vacuumsm');
+				const gussetsm = document.getElementById('gussetsm');
+				const threesm = document.getElementById('threesm');
 
+				const nameContainer = document.querySelectorAll('.product-name');
+				const content = document.querySelector('.p-description');
+				const img = document.querySelector('img.choose');
+				const carousel = document.querySelectorAll('.carousel-img');
+				let carouselcontent = [];
+				// ISI DATA DARI TIAP KONTEN
+				const data = [
+					{
+						name: 'Central Seal',
+						desc: `Packaging dengan seal dibagian tengah, bawah, dan atas. Sering digunakan untuk mengemas snack dan makanan ringan lainnya.`,
+						mainphoto: 'images/produk-centralseal.png',
+						carousel: {
+							photo1: 'images/produk-centralseal.png',
+							photo2: 'images/produk-centralseal.png',
+							photo3: 'images/produk-centralseal.png',
+						},
+					},
+					{
+						name: 'Standing Pouch',
+						desc: `Packaging Standing Pouch merupakan kemasan yang bisa berdiri
+            dan bentuknya menyerupai kantung. Standing Pouch dari Digipack
+            by Supernova dapat dilengkapi dengan zipper lock yang bisa
+            dibuka atau ditutup kembali.
+            Selain praktis, packaging Standing Pouch juga kuat, anti lecet, dan
+            tahan benturan sehingga produk aman dari kebocoran. Jadi bisa
+            dipastikan produk yang dikemas menggunakan packaging ini akan
+            terjaga kualitasnya.`,
+						mainphoto: 'images/standing-pouch.png',
+						carousel: {
+							photo1: 'images/standing-pouch.png',
+							photo2: 'images/standing-pouch.png',
+							photo3: 'images/standing-pouch.png',
+						},
+					},
+					{
+						name: 'Vacuum Pack',
+						desc: `Packaging yang didesain kedap udara agar produk tidak mudah basi. Sering digunakan untuk mengemas produk frozen food`,
+						mainphoto: 'images/produk-vacuumpack.png',
+						carousel: {
+							photo1: 'images/produk-vacuumpack.png',
+							photo2: 'images/produk-vacuumpack.png',
+							photo3: 'images/produk-vacuumpack.png',
+						},
+					},
+					{
+						name: 'Gusset Pouch',
+						desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate ultricies nunc ut gravida. 
+              Maecenas iaculis magna sit amet sem tristique fringilla. Nulla blandit, odio accumsan porta blandit,
+               metus metus convallis nisi, nec rhoncus eros lectus vel tortor. Ut ac suscipit orci. Proin tristique
+                imperdiet accumsan. Quisque aliquam erat metus, faucibus vestibulum enim ornare eget. Sed sed consequat
+                 odio. Vestibulum semper cursus felis in dictum. Suspendisse id mollis risus`,
+						mainphoto: 'images/standing-pouch.png',
+						carousel: {
+							photo1: 'images/produk-gusset.png',
+							photo2: 'images/produk-gusset.png',
+							photo3: 'images/produk-gusset.png',
+						},
+					},
+					{
+						name: 'Three Block Seal',
+						desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate ultricies nunc ut gravida. 
+              Maecenas iaculis magna sit amet sem tristique fringilla. Nulla blandit, odio accumsan porta blandit,
+               metus metus convallis nisi, nec rhoncus eros lectus vel tortor. Ut ac suscipit orci. Proin tristique
+                imperdiet accumsan. Quisque aliquam erat metus, faucibus vestibulum enim ornare eget. Sed sed consequat
+                 odio. Vestibulum semper cursus felis in dictum. Suspendisse id mollis risus`,
+						mainphoto: 'images/standing-pouch.png',
+						carousel: {
+							photo1: 'images/standing-pouch.png',
+							photo2: 'images/standing-pouch.png',
+							photo3: 'images/standing-pouch.png',
+						},
+					},
+				];
+
+				let currentIndex = 1;
+
+				const showDataByNumber = (number) => {
+					content.innerHTML = data[number].desc;
+					img.src = data[number].mainphoto;
+					for (i = 0; i < nameContainer.length; i++) {
+						nameContainer[i].innerHTML = data[number].name;
+					}
+					carouselcontent = [];
+					for (carouselimg in data[number].carousel) {
+						carouselcontent.push(data[number].carousel[carouselimg]);
+					}
+					for (i = 0; i < carouselcontent.length; i++) {
+						carousel[i].src = `${carouselcontent[i]}`;
+					}
+				};
+
+				centralmd.addEventListener('click', () => {
+					showDataByNumber(0);
+					$('.choose-packaging-btn-sm').removeClass('active');
+					$('.choose-packaging-btn-sm.central').addClass('active');
+				});
+				standingmd.addEventListener('click', () => {
+					showDataByNumber(1);
+					$('.choose-packaging-btn-sm').removeClass('active');
+					$('.choose-packaging-btn-sm.standing').addClass('active');
+				});
+				vacuummd.addEventListener('click', () => {
+					showDataByNumber(2);
+					$('.choose-packaging-btn-sm').removeClass('active');
+					$('.choose-packaging-btn-sm.vacuum').addClass('active');
+				});
+				gussetmd.addEventListener('click', () => {
+					showDataByNumber(3);
+					$('.choose-packaging-btn-sm').removeClass('active');
+					$('.choose-packaging-btn-sm.gusset').addClass('active');
+				});
+				threemd.addEventListener('click', () => {
+					showDataByNumber(4);
+					$('.choose-packaging-btn-sm').removeClass('active');
+					$('.choose-packaging-btn-sm.three').addClass('active');
+				});
+
+				centralsm.addEventListener('click', () => {
+					showDataByNumber(0);
+				});
+				standingsm.addEventListener('click', () => {
+					showDataByNumber(1);
+				});
+				vacuumsm.addEventListener('click', () => {
+					showDataByNumber(2);
+				});
+				gussetsm.addEventListener('click', () => {
+					showDataByNumber(3);
+				});
+				threesm.addEventListener('click', () => {
+					showDataByNumber(4);
+				});
+
+				showDataByNumber(currentIndex);
+			};
+
+			document.addEventListener('DOMContentLoaded', render);
+			//CAROUSEL INIT
+			$('.owl-carousel').owlCarousel({
+				loop: false,
+				margin: 10,
+				nav: true,
+				items: 1,
+				rewind: true,
+				center: true,
+				navText: [
+					'<div class="half-circle right"><i class="fa fa-angle-left nav-icon left" aria-hidden="true"></i></div>',
+					'<div class="half-circle left"><i class="fa fa-angle-right nav-icon right" aria-hidden="true"></i></div>',
+				],
+			});
+
+			// INPUT NUMBER
+			$('.btn-plus, .btn-minus').on('click', function (e) {
+				const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+				const input = $(e.target).closest('.input-group').find('input');
+				if (input.is('input')) {
+					input[0][isNegative ? 'stepDown' : 'stepUp']();
+				}
+			});
+
+			//TOOPTIP INITIAL
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+			// INPUT DATA VALUE
+			$('#file-upload').change(function () {
+				$('#file-name').text(this.files[0].name);
+			});
 			//BOTTOM SHEET MOBILE TOGGLE
 			$(document).ready(function () {
 				$('.choose-packaging-btn-sm').click(function () {
@@ -698,10 +990,6 @@
 					$(this).addClass('active');
 				});
 			});
-
-			
 		</script>
-		<script src="scripts/vendor.js"></script>
-		<script src="scripts/main.js"></script>
 	</body>
 </html>
