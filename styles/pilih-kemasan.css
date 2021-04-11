@@ -185,6 +185,10 @@ body {
 	margin-top: 45px;
 }
 
+.form-input-produk {
+	margin-top: 50px !important;
+}
+
 #before-footer {
 	margin-top: 50px;
 }
@@ -230,6 +234,7 @@ body {
 
 	.form-produk {
 		padding: 0px 15px;
+		margin-top: 30px !important;
 	}
 
 	.form-produk h2 {
@@ -298,6 +303,15 @@ body {
 	.button-form {
 		margin-top: 30px !important;
 		margin-bottom: 100px;
+	}
+
+	.product-tab {
+		position: relative;
+		display: inline-block;
+		height: 32px;
+		text-align: center;
+		/* background: #ffe; */
+		cursor: pointer;
 	}
 }
 
@@ -1686,8 +1700,10 @@ section.pabrik .right .info a:hover {
 		padding-left: 0%;
 	}
 
+	/* tst */
+
 	section.pabrik .base img {
-		pposition: absolute;
+		position: absolute;
 		width: 950%;
 		z-index: 2;
 		left: 30px;
@@ -1934,9 +1950,9 @@ section.pabrik .right .info a:hover {
 .product-tab {
 	position: relative;
 	display: inline-block;
-	height: 32px;
+	height: 42px;
 	text-align: center;
-	background: #ffe;
+	/* background: #ffe; */
 	cursor: pointer;
 }
 .product-tab .border-bottom {
@@ -1965,7 +1981,7 @@ section.pabrik .right .info a:hover {
 }
 
 .second {
-	margin-top: -10px;
+	margin-top: -10px !important;
 }
 /* PRICE FORM */
 .price-form::placeholder {
