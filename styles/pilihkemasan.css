@@ -17,13 +17,23 @@
 .pilihan-kemasan button {
 	font-weight: bold;
 	font-size: 14px;
-	/* margin-right: 20px; */
 	font-weight: 400;
+	padding: 1rem 2rem;
 }
 
-.pilihan-kemasan .active {
-	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
-	border: none;
+.select-active {
+	transform: rotate(180);
+}
+
+.active-packaging {
+	/* padding: 1rem 2rem; */
+	/* background-color: #eaf5ff;
+	color: #312d75;
+	transition: 0.5s; */
+	/* background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
+	    transition: 1s; */
+	color: #312d75 !important;
+	box-shadow: none !important;
 }
 
 .pilihan-kemasan .row {
@@ -36,13 +46,24 @@
 }
 
 .btn-pilih {
-	padding: 12px 25px;
-	background: #eaf5ff;
+	color: #312d75;
+	background-color: #eaf5ff;
+	border-color: #eaf5ff;
 }
 
 .btn-kemasan {
-	padding: 12px 25px;
-	border: 1px solid #ffc90a;
+	color: #312d75;
+	background-color: white;
+	transition: 0.5s;
+	border: solid 1.5px transparent;
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0)
+		),
+		linear-gradient(180deg, #fdf025, #ffc90a);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px #fff inset;
 }
 
 .kemasan-fill {
@@ -55,9 +76,9 @@
 }
 
 .btn-kemasan:hover {
-	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
-	border: none;
-	padding: 13px 26px;
+	transition: 1s;
+	color: #312d75;
+	box-shadow: none;
 }
 
 .produk {
@@ -65,12 +86,16 @@
 }
 
 .produk .foto-produk {
-	height: 110%;
-	width: 80%;
-	margin-right: 10px !important;
+	width: 100%;
+	transition: 1s;
 	border: 1px solid #ffc90a;
-	border-radius: 30px;
 	padding: 50px 0px;
+	border-radius: 30px;
+	margin: 0px 30px;
+}
+
+.produk .foto-produk img {
+	width: auto;
 }
 
 .produk .info-produk h1 {
@@ -81,20 +106,18 @@
 .produk .info-produk .produk-desc {
 	font-weight: 400;
 	font-size: 16px;
-	width: 66%;
+	width: 75%;
 	margin-top: 10px;
-	line-height: 30px;
+	line-height: 40px;
 }
 
 .custom-form-control {
 	display: block;
 	width: 100%;
-	/* height: calc(1.5em + .75rem + 2px); */
 	padding: 0.675rem 0.75rem;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	/* color: #c0c4cd; */
 	background-color: #fff;
 	background-clip: padding-box;
 	border: 1px solid #ced4da;
@@ -114,12 +137,10 @@
 .select-form {
 	display: inline-block;
 	width: 100%;
-	/* height: calc(1.5em + 0.75rem + 2px); */
 	padding: 0.675rem 0.75rem;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.5;
-	color: #c0c4cd;
 	background: #fff url(../images/down-chevron.svg) no-repeat right 1rem
 		center/20px 16px;
 	vertical-align: middle;
@@ -130,6 +151,16 @@
 	appearance: none;
 	text-decoration: none;
 	outline: none;
+}
+
+.select-form::placeholder {
+	font-size: 16px;
+	color: #c0c4cd;
+	font-weight: 300;
+}
+
+.select-form:invalid {
+	color: #c0c4cd;
 }
 
 .input-group {
@@ -255,7 +286,7 @@
 
 .kebutuhan form {
 	margin-top: 20px;
-	width: 66%;
+	width: 75%;
 	margin-bottom: 100px;
 }
 
@@ -359,8 +390,14 @@
 	margin-left: 10px;
 }
 
-.kebutuhan form .upload-price .unit-input::placeholder {
+.select:invalid {
 	color: #c0c4cd;
+}
+
+.kebutuhan form .upload-price .unit-input::placeholder {
+	font-size: 16px;
+	color: #c0c4cd;
+	font-weight: 300;
 }
 
 .kebutuhan form .upload-price .unit-input:focus {
@@ -405,9 +442,79 @@
 	margin-top: 0% !important;
 }
 
+/* BOTTOM SHEET MODAL MOBILE */
+.overlay-modal {
+	z-index: 10;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.85);
+	opacity: 0;
+	transition: all 450ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
+}
+.overlay-modal .social {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	height: 80vh;
+	z-index: 9;
+	background-color: #fff;
+	padding: 8px 24px 16px;
+	box-sizing: border-box;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.22),
+		0px 14px 56px rgba(0, 0, 0, 0.25);
+	transition: 1s;
+	transform: translate(0, 100%);
+}
+
+.show-m {
+	transform: translate(0, 100%);
+}
+
+.overlay-modal .btn-close {
+	color: #666;
+	transform: scale(0, 0);
+	transition: all 450ms ease-in-out 0;
+}
+.overlay-modal:target {
+	display: block;
+	position: fixed;
+	top: 0;
+	opacity: 1;
+}
+.overlay-modal:target .social {
+	transform: translate(0, 0);
+	transition: 0.5s;
+	z-index: 9;
+}
+.overlay-modal:target .btn-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	outline: 0 none;
+	transform: scale(1, 1);
+}
+.border-navigation {
+	width: 100px;
+	border-radius: 35px;
+	height: 5px;
+	background-color: #dadada;
+}
+
 @media (max-width: 576px) {
 	.pilihan-kemasan {
 		display: none;
+	}
+
+	.col-reverse {
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 	#show-mobile {
@@ -417,9 +524,10 @@
 		padding-bottom: 20px;
 	}
 
-	#show-mobile button {
+	#show-mobile a {
 		width: 100%;
 		margin-top: 60px;
+		padding: 1rem;
 	}
 
 	#hide-mobile {
@@ -431,7 +539,7 @@
 	}
 
 	.produk {
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 
 	.produk .foto-produk {
@@ -532,11 +640,11 @@
 	}
 
 	.kebutuhan form .upload .upload-design p {
-		font-size: 9px;
+		font-size: 12px;
 	}
 
 	.kebutuhan form .upload .share-link p {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.kebutuhan .nav-btn {
@@ -564,3 +672,78 @@
 		padding: 10px 25px;
 	}
 }
+
+/* BUTTON */
+/* .padding-button {
+	padding: 1rem;
+}
+
+.primary-button {
+	color: #312d75;
+	background-color: white;
+	transition: 0.5s;
+	border: solid 1.5px transparent;
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0)
+		),
+		linear-gradient(180deg, #fdf025, #ffc90a);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.primary-button:hover {
+	transition: 1s;
+	color: #312d75;
+	box-shadow: none;
+}
+
+.secondary-button {
+	color: #312d75;
+	background-color: #eaf5ff;
+	border-color: #eaf5ff;
+}
+.secondary-button:hover {
+	color: #312d75;
+}
+.upload-button {
+	color: white;
+	transition: 0.5s;
+	background: linear-gradient(172.04deg, #1891f6 10.75%, #1a38e3 139.85%);
+}
+.upload-button:hover {
+	color: white;
+}
+.choose-packaging-btn {
+	padding: 1rem 2rem;
+	/* background: none; */
+/* border-color: none;
+}
+
+.choose-packaging-btn-sm {
+	padding: 1rem 2rem;
+	background-color: white;
+	border-color: none;
+	color: #312d75;
+	font-size: 16px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.choose-packaging-btn-sm:hover {
+	padding: 1rem 2rem;
+	background-color: #eaf5ff;
+	color: #312d75;
+	transition: 0.5s;
+}
+.choose-packaging-btn-sm.active {
+	padding: 1rem 2rem;
+	background-color: #eaf5ff;
+	color: #312d75;
+	transition: 0.5s;
+}
+.choose-packaging-btn .choose {
+	padding: 1rem 2rem;
+	background-color: #eaf5ff;
+	border-color: #eaf5ff;
+} */

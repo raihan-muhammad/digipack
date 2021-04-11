@@ -96,27 +96,31 @@
 			<div class="pilihan-kemasan container">
 				<div class="row d-flex justify-content-around">
 					<button type="button" class="btn btn-pilih">Pilihan Kemasan</button>
-					<button type="button" class="btn btn-kemasan">Central Seal</button>
-					<button type="button" class="btn btn-kemasan active">
+					<button type="button" class="btn btn-kemasan choose-packaging" id="centralmd">Central Seal</button>
+					<button type="button" class="btn btn-kemasan choose-packaging active-packaging" id="standingmd">
 						Standing Pouch
 					</button>
-					<button type="button" class="btn btn-kemasan">Vacuum Pack</button>
-					<button type="button" class="btn btn-kemasan">Gusset Pouch</button>
-					<button type="button" class="btn btn-kemasan">Three Block Seal</button>
+					<button type="button" class="btn btn-kemasan choose-packaging" id="vacuummd">Vacuum Pack</button>
+					<button type="button" class="btn btn-kemasan choose-packaging" id="gussetmd">Gusset Pouch</button>
+					<button type="button" class="btn btn-kemasan choose-packaging" id="threemd">Three Block Seal</button>
 				</div>
 			</div>
 			<div id="show-mobile">
-				<button class="btn btn-pilih">Pilihan Kemasan</button>
+				<a
+							href="#bottom-sheet"
+							class="btn btn-pilih w-full d-block d-md-none padding-button mr-3 choose"
+							>Pilihan Kemasan</a
+						>
 			</div>
 			<div class="produk">
-				<div class="container" id="hide-mobile">
-					<div class="row">
-						<div class="col d-flex justify-content-end">
+				<div class="container">
+					<div class="row col-reverse">
+						<div class="col-12 col-md-6 d-flex justify-content-end">
 							<div class="foto-produk d-flex justify-content-center">
 								<img src="./images/produk-standingpouch.png" alt="" />
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-12 col-md-6">
 							<div class="info-produk">
 								<h1>Standing Pouch</h1>
 								<div class="produk-desc">
@@ -129,30 +133,6 @@
 									produk yang dikemas menggunakan packaging ini akan terjaga
 									kualitasnya.
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container" id="show-mobile">
-					<div class="row">
-						<div class="col">
-							<div class="info-produk">
-								<h1>Standing Pouch</h1>
-								<div class="produk-desc">
-									Packaging Standing Pouch merupakan kemasan yang bisa berdiri
-									dan bentuknya menyerupai kantung. Standing Pouch dari Digipack
-									by Supernova dapat dilengkapi dengan zipper lock yang bisa
-									dibuka atau ditutup kembali. Selain praktis, packaging
-									Standing Pouch juga kuat, anti lecet, dan tahan benturan
-									sehingga produk aman dari kebocoran. Jadi bisa dipastikan
-									produk yang dikemas menggunakan packaging ini akan terjaga
-									kualitasnya.
-								</div>
-							</div>
-						</div>
-						<div class="col  d-flex justify-content-end">
-							<div class="foto-produk d-flex justify-content-center">
-								<img src="./images/produk-standingpouch.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -222,7 +202,7 @@
 										</svg>
 									</label>
 									<select class="select-form">
-										<option selected class="selected">
+										<option value=''>
 											-- Choose Grade --
 										</option>
 										<option value="1">One</option>
@@ -247,7 +227,7 @@
 										</svg>
 									</label>
 									<select class="select-form">
-										<option selected>-- Choose Accesories --</option>
+										<option value=''>-- Choose Accesories --</option>
 										<option value="1">One</option>
 										<option value="2">Two</option>
 										<option value="3">Three</option>
@@ -257,7 +237,7 @@
 									<label for="Size" class="form-label"> Size </label>
 									<div class="d-flex align-items-center">
 										<select class="select-form">
-											<option selected>-- Choose Size --</option>
+											<option value=''>-- Choose Size --</option>
 											<option value="1">One</option>
 											<option value="2">Two</option>
 											<option value="3">Three</option>
@@ -282,7 +262,7 @@
 								<div class="upload container">
 									<div class="row">
 										<div class="col-6">
-											<div class="upload-design d-flex align-items-center">
+											<div class="upload-design d-flex align-items-center justify-content-center justify-content-between">
 												<div class="img-icon">
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
@@ -368,7 +348,7 @@
 											<h5>Unit Price*</h5>
 											<div class="inputan d-flex">
 												<div class="prefix">Rp</div>
-												<input type="text" class="unit-input" placeholder="0" />
+												<input type="number" class="unit-input" placeholder="0" />
 											</div>
 											<div class="divider-1"></div>
 										</div>
@@ -376,7 +356,7 @@
 											<h5>Unit Price*</h5>
 											<div class="inputan d-flex">
 												<div class="prefix">Rp</div>
-												<input type="text" class="unit-input" placeholder="0" />
+												<input type="number" class="unit-input" placeholder="0" />
 											</div>
 											<div class="divider-1"></div>
 										</div>
@@ -389,12 +369,65 @@
 										<a href="#">
 										<button class="btn btn-sec">Contact Us</button>
 									</a>
-									<button class="btn btn-kemasan kemasan-fill no-border">Add to cart</button>
+									<button class="btn kemasan-fill no-border">Add to cart</button>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div id="bottom-sheet" class="overlay-modal">
+				<aside
+					class="social"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="modal-label"
+					aria-hidden="true"
+				>
+					<div class="d-flex flex-column">
+						<div class="border-navigation d-block mx-auto mt-1"></div>
+						<button
+							type="button"
+							id="centralsm"
+							class="btn central w-full choose-packaging-btn-sm mt-4"
+						>
+							Central Seal
+						</button>
+						<button
+							type="button"
+							id="standingsm"
+							class="btn standing w-full choose-packaging-btn-sm mt-2 active"
+						>
+							Standing Pouch
+						</button>
+						<button
+							type="button"
+							id="vacuumsm"
+							class="btn vacuum w-full choose-packaging-btn-sm mt-2"
+						>
+							Vacuum Pack
+						</button>
+						<button
+							type="button"
+							id="gussetsm"
+							class="btn gusset w-full choose-packaging-btn-sm mt-2"
+						>
+							Gusset Pouch
+						</button>
+						<button
+							type="button"
+							id="threesm"
+							class="btn three w-full choose-packaging-btn-sm mt-2"
+						>
+							Three Block Seal
+						</button>
+					</div>
+				</aside>
+				<a href="#close" class="btn-close" aria-hidden="true"
+					><span class="mdi mdi-close"></span
+					><span class="sr-only">Close</span></a
+				>
 			</div>
 
 			<div id="before-footer">
@@ -641,7 +674,7 @@
 			</div>
 		</div>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-		<script>
+		<script type="text/javascript">
 			(function (b, o, i, l, e, r) {
 				b.GoogleAnalyticsObject = l;
 				b[l] ||
@@ -656,6 +689,17 @@
 			})(window, document, 'script', 'ga');
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
+
+
+			//BOTTOM SHEET MOBILE TOGGLE
+			$(document).ready(function () {
+				$('.choose-packaging-btn-sm').click(function () {
+					$('.choose-packaging-btn-sm').removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+
+			
 		</script>
 		<script src="scripts/vendor.js"></script>
 		<script src="scripts/main.js"></script>
