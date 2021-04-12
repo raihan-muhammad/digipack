@@ -47,11 +47,35 @@ body {
 
 /* pilihan kemasan */
 
+.active-choose {
+	color: #312d75 !important;
+	box-shadow: none !important;
+}
+
 .head-title-banner {
 	width: 100%;
 	background: #2a6ff5;
 	margin-top: 55px;
 	margin-bottom: 50px;
+}
+
+.form-control-custom {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
+	background: #fff url(../images/down-chevron.svg) no-repeat right 1rem
+		center/20px 16px;
+	/* vertical-align: middle; */
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	text-decoration: none;
+	outline: none;
 }
 
 .img-produk img {
@@ -123,7 +147,6 @@ body {
 	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%) !important;
 	padding: 13px 26px;
 }
-
 .prefix {
 	color: #c0c4cd;
 }
@@ -2336,8 +2359,8 @@ input.price-form:focus ~ .highlight {
 	transition: 1s;
 }
 .owl-carousel:hover {
-	/* border-color: #1a38e3; */
-	border: none;
+	border-color: #1a38e3;
+	/* border: none; */
 	transition: 1s;
 }
 .owl-carousel:hover .owl-nav > button {
@@ -2399,7 +2422,7 @@ input.price-form:focus ~ .highlight {
 		cursor: default !important;
 	}
 	.p-description {
-		width: 66%;
+		width: 76%;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 40px;

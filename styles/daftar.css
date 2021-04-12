@@ -7,7 +7,7 @@
 }
 
 .login-form {
-	margin-bottom: -100px;
+	margin-bottom: 100px;
 }
 
 .login-form h3 {
@@ -216,7 +216,7 @@ h4 span a {
 		display: flex;
 		justify-content: center;
 		margin-top: 80px;
-		margin-bottom: 160px;
+		margin-bottom: 50px;
 	}
 
 	.login-form .border img {
