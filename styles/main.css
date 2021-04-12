@@ -115,6 +115,11 @@ section.profile .profile-desc {
 	font-weight: 400;
 }
 
+#blog .blog-wrapper .block .more a img {
+	width: 15%;
+	margin-left: 10px;
+}
+
 .bold {
 	font-weight: 800;
 }
@@ -197,7 +202,7 @@ section.teknologi .teknologi-desc {
 section.pabrik {
 	margin-top: 108px;
 	position: relative;
-	margin-bottom: -2%;
+	margin-bottom: 12%;
 }
 
 section.pabrik .title-section img {
@@ -1024,6 +1029,14 @@ section.pabrik .right .info a:hover {
 	#blog .blog-wrapper .block .more {
 		font-size: 10px;
 	}
+
+	#blog .blog-wrapper .block .more a {
+		float: right;
+		margin-right: -20px !important;
+		color: #ed1c24;
+		padding-bottom: 20px;
+		text-decoration: none;
+	}
 }
 
 @media (min-width: 576px) {
@@ -1170,7 +1183,7 @@ section.pabrik .right .info a:hover {
 
 #before-footer {
 	background: #1f70e6;
-	margin-top: 10%;
+	margin-top: -4%;
 }
 
 @media (max-width: 575.98px) {
@@ -1688,8 +1701,8 @@ section.pabrik .right .info a:hover {
 	}
 
 	section.pabrik .right {
-		padding-top: 130%;
-		padding-bottom: 20%;
+		padding-top: 140%;
+		padding-bottom: 5%;
 		width: 100%;
 		text-align: center;
 		margin-left: 0;

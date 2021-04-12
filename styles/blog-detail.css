@@ -101,6 +101,10 @@
 	margin-bottom: 20px;
 }
 
+.blog-content .content-desc {
+	margin-bottom: 130px;
+}
+
 .blog-content .content-desc p {
 	padding-top: 20px;
 	font-weight: 400;
