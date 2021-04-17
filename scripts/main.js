@@ -123,3 +123,72 @@ $(document).ready(function () {
 	});
 });
 //# sourceMappingURL=main.js.map
+
+// custom select
+
+for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
+	dropdown.addEventListener('click', function () {
+		this.querySelector('.custom-select').classList.toggle('open');
+		document.getElementById('trigger').classList.add('border-blue');
+		console.log(document.getElementById('trigger').classList);
+	});
+}
+
+for (const selectMenu of document.querySelectorAll('.custom-select__trigger')) {
+	selectMenu.addEventListener('click', function () {
+		selectMenu.classList.add('border-blue');
+	});
+}
+
+for (const option of document.querySelectorAll('.custom-option')) {
+	option.addEventListener('click', function () {
+		if (!this.classList.contains('selected')) {
+			this.parentNode
+				.querySelector('.custom-option.selected')
+				.classList.remove('selected');
+			this.classList.add('selected');
+			this.closest('.custom-select').querySelector(
+				'.custom-select__trigger span'
+			).textContent = this.textContent;
+		}
+		document.getElementById('trigger').classList.remove('border-blue');
+	});
+}
+
+window.addEventListener('click', function (e) {
+	for (const select of document.querySelectorAll('.custom-select')) {
+		if (!select.contains(e.target)) {
+			select.classList.remove('open');
+			// document.getElementById('trigger').classList[1].replace('');
+			// console.log(document.getElementById('trigger').classList);
+		}
+	}
+});
+
+// if (document.querySelector('div').classList.contains('.custom-select open')) {
+// 	for (const selectMenu of document.querySelectorAll(
+// 		'.custom-select__trigger'
+// 	)) {
+// 		selectMenu.addEventListener('click', function () {
+// 			selectMenu.classList.add('border-blue');
+// 			console.log('1');
+// 		});
+// 	}
+// } else {
+// 	for (const selectMenu of document.querySelectorAll(
+// 		'.custom-select__trigger'
+// 	)) {
+// 		selectMenu.addEventListener('click', function () {
+// 			selectMenu.classList.remove('border-blue');
+// 			console.log(0);
+// 		});
+// 	}
+// }
+
+// window.addEventListener('click', function () {
+// 	for (const menuSelect of document.querySelectorAll(
+// 		'.custom-select__trigger'
+// 	)) {
+// 		menuSelect.classList.remove('border-blue');
+// 	}
+// });
