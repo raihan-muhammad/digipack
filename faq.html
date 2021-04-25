@@ -11,9 +11,16 @@
 		<title>digipack</title>
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<!-- Place favicon.ico in the root directory -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css"
+			integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg=="
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="styles/vendor.css" />
 		<link rel="stylesheet" href="styles/main.css" />
-		<link rel="stylesheet" href="styles/modal.css">
+		<link rel="stylesheet" href="styles/modal.css" />
+		<link rel="stylesheet" href="styles/faq.css" />
 		<script src="scripts/modernizr.js"></script>
 	</head>
 	<body>
@@ -49,11 +56,13 @@
 								<li class="nav-item">
 									<a class="nav-link" href="index.html">Beranda</a>
 								</li>
-								<li class="nav-item active">
+								<li class="nav-item">
 									<a class="nav-link" href="about-us.html">Tentang Kami</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="pilih-kemasan.html">Pilihan Kemasan</a>
+									<a class="nav-link" href="pilih-kemasan.html"
+										>Pilihan Kemasan</a
+									>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="blog.html">Blog</a>
@@ -62,9 +71,14 @@
 							<div class="menu-act my-2 my-lg-0 d-flex">
 								<ul class="pl-0 ml-0 mb-0 menu-log">
 									<li class="singin">
-										<a href="#" class="btn rounded" data-toggle="modal"
-										type="button"
-										data-target="#modalLogin">Masuk</a>
+										<a
+											href="#"
+											class="btn rounded"
+											data-toggle="modal"
+											type="button"
+											data-target="#modalLogin"
+											>Masuk</a
+										>
 									</li>
 									<li class="singup">
 										<a href="daftar.html" class="btn rounded">Daftar</a>
@@ -81,196 +95,211 @@
 			</div>
 			<div class="content-wrapper pt-5 mt-5">
 				<div class="head-title wow fadeInUp">
-						<div class="container no-display-mobile">
-							<img src="./images/tentang-kami-title.jpg" alt="about-us" />
-						</div>
+					<div class="container no-display-mobile">
+						<img src="./images/faq.png" alt="about-us" />
+					</div>
 				</div>
 				<div class="no-display-web show-mobile">
-			<img src="./images/tentang-kami-title.jpg"alt="pilih kemasan" />
-		</div>
-				<section class="profile wow fadeInUp">
-					<div class="title-section text-center mb-5">
-							<h1 class="title">Profile</h1>
+					<img src="./images/faq.png" alt="pilih kemasan" />
+				</div>
+			</div>
+			<!-- content -->
+			<div class="content container">
+				<div class="row">
+					<div class="col-md-6 left">
+						<div class="first-row extend-width">
+							<div class="title">Akun saya - Daftar & Masuk Akun</div>
+							<div class="d-flex flex-column">
+								<a href="faq-detail.html">
+									<div class="menu extend-height-mobile">Apa itu Supernova Digipack?</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile">
+										Mengapa harus pilih Supernova Digipack?
+									</div>
+								</a>
+								<a href=""
+									><div class="menu extend-height-mobile">Dimana lokasi Supernova Digipack?</div></a
+								>
+								<a href="">
+									<div class="menu extend-height-mobile special">
+										Bagaimana cara daftar akun Supernova Digipack?
+									</div></a
+								>
+								<a href=""
+									><div class="menu extend-height-mobile extend-height-web">
+										Bagaimana cara login akun Supernova Digipack?
+									</div></a
+								>
+								<a href=""
+									><div class="menu extend-height-web special">
+										Bagaimana jika saya lupa kata sandi di akun Supernova
+										Digipack?
+									</div></a
+								>
+							</div>
 						</div>
-					<div class="profile-desc">
-						<p>
-							<span class="bold">Supernova Digipack</span> merupakan bagian
-							dari PT Supernova Flexible Packaging yang telah berpengalaman
-							dalam produksi flexible packaging selama lebih dari 30 tahun. Kami
-							selalu mengedepankan kepuasan pelanggan. Maka dari itu,
-							<span class="bold">Supernova Digipack</span> dapat membuat
-							packaging dengan kualitas terbaik dari segi warna dan pengiriman.
-						</p>
-						<p>
-							Kami juga berkomitmen untuk menjadi partner packaging terpercaya
-							untuk berbagai pelaku usaha, baik usaha skala besar maupun kecil,
-							agar mereka dapat mengembangkan bisnisnya lebih baik melalui
-							packaging yang menarik.
-						</p>
+						<div class="second-row extend-width">
+							<div class="title">Akun saya - Pengaturan Akun</div>
+							<div class="d-flex flex-column">
+								<a href="">
+									<div class="menu extend-height-mobile">Bagaimana cara mengubah profil akun?</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile">
+										Bagaimana cara mengubah kata sandi akun?
+									</div>
+								</a>
+								<a href=""
+									><div class="menu extend-height-mobile special">
+										Bagaimana cara mengubah nomor handphone akun?
+									</div></a
+								>
+								<a href="">
+									<div class="menu extend-height-mobile">Bagaimana cara mengubah email akun?</div></a
+								>
+								<a href=""
+									><div class="menu extend-height-mobile special">
+										Bagaimana cara mengubah alamat pengiriman akun?
+									</div></a
+								>
+							</div>
+						</div>
+						<div class="third-row extend-width">
+							<div class="title">Pesanan Saya</div>
+							<div class="d-flex flex-column">
+								<a href="">
+									<div class="menu extend-height-mobile">
+										Apakah ada Minimum Order Quantity (MOQ)?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile">Berapa lama waktu pengerjaan?</div>
+								</a>
+								<a href=""
+									><div class="menu extend-height-mobile">
+										Bagaimana cara melakukan pemesanan?
+									</div></a
+								>
+								<a href="">
+									<div class="menu extend-height-web special">
+										Bagaimana cara membatalkan atau merubah pesanan?
+									</div></a
+								>
+								<a href=""
+									><div class="menu extend-height-mobile">
+										Bagaimana cara mengecek status pesanan?
+									</div></a
+								>
+								<a href=""
+									><div class="menu extend-height-mobile">
+										Bagaimana cara mengisi ulasan produk?
+									</div></a
+								>
+							</div>
+						</div>
 					</div>
-                    </section>
-					<div id="profile-slider" class=" profile-slider wow fadeInDown" data-wow-delay="0.2s">
-          <div class="container">
-            <div class="slider single-item-profile">
-              <div class="block">
-                <div class="img-profile">
-                  <a href="#"
-                    ><img src="images/slider-profile-1.jpg" alt="" class="img-fluid"
-                  /></a>
-                </div>
-              </div>
-              <div class="block img-profile">
-                <div class="img">
-                  <img src="images/slider-profil-2.jpg" alt="" class="img-fluid" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="profile-nav text-center wow fadeInUp">
-              <h1 class="profile-title-no-underline mt-5 text-center">Visi</h1>
-          <p>
-              Menjadi industri kemasan terkemuka di Indonesia, Asia Tenggara, dan Dunia melalui perkembangan teknologi.
-          </p>
-          </div>
-          <div class="profile-nav text-center wow fadeInUp">
-              <h1 class="profile-title-no-underline misi text-center">Misi</h1>
-          <p>
-              Perusahaan dan karyawan maju dan berkembang bersama.
-          </p>
-          </div>
-          <div class="after-misi wow fadeInDown">
-              <div class="container">
-				  <img src="./images/after-misi.png" alt="value">
-			  </div>
-          </div>
+					<div class="col-md-6 right">
+						<div class="first-row-right">
+							<div class="title">Pembayaran</div>
+							<div class="d-flex flex-column">
+								<a href="">
+									<div class="menu">
+										Bagaimana cara bayar di Supernova Digipack?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile special">
+										Bagaimana cara membatalkan transaksi pembayaran?
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="second-row-right">
+							<div class="title mt-37">Pengiriman</div>
+							<div class="d-flex flex-column">
+								<a href="">
+									<div class="menu mt-23 extend-height-mobile">
+										Apa saja layanan pengiriman yang tersedia?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-web special">
+										Bagaimana layanan asuransi pengiriman di Supernova Digipack?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height extend-height-web special">
+										Apakah pesanan saya dapat dikirimkan ke beberapa tempat
+										berbeda?
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="third-row-right">
+							<div class="title">Ketentuan File Order</div>
+							<div class="d-flex flex-column">
+								<a href="">
+									<div class="menu extend-height-mobile">
+										Format file apa saja yang dapat diterima?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile special">
+										Berapa resolusi file yang dianjurkan untuk di upload?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile special">
+										   Metode warna apa yang dianjurkan untuk di upload?
+									</div>
+								</a>
+								<a href="">
+									<div class="menu extend-height-mobile">
+										Bagaimana jika saya tidak memiliki desain?
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="four-row">
+							<div class="info">
+								<h4>Tidak menemukan yang Anda cari?</h4>
+								<h4 class="second-teks">Hubungi Kami</h4>
+								<h4 class="summary">Tulis Pertanyaanmu Sekarang!</h4>
+							</div>
+							<div class="mt-4 d-flex flex-column justify-content-center">
+								<div class="wa-btn">
+									<a href="" class="css-button">
+										<span class="css-button-icon">
+										<img src="/images/whatsapp-line.png" alt=""></span>
+										<span class="css-button-text">Whatsapp Sekarang!</span>
+									</a>
+								</div>
+								<div class="email-btn">
+									<a class="css-button-email mt-3">
+										<span class="css-button-email-icon">
+											<img src="/images/mail-line.png" alt="">
+										</span>
+										<span class="css-button-email-text">Email Sekarang!</span>
+									</a>
+								</div>
+								<h4 class="primary m-top m-bottom">
+									Sudah siap berbelanja di Supernova Digipack?
+								</h4>
+								<p class="primary-summary">
+									Temukan beragam pilihan produk kemasan digital untuk
+									mempermudah segala kebutuhan packagingmu! Supernova Digipack
+									siap bikin #packagingjadiamazing
+								</p>
+								<button class="btn btn-primaryku">Mulai Belanja</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end content -->
 
-                <section class="teknologi mt-5 wow fadeInUp">
-              <div class="title-section text-center mb-5">
-							<h1 class="title">Teknologi</h1>
-							<div class="dot container relative">
-								<img src="./images/dot.png" alt="dot">
-							</div>
-						</div>
-                        <div class="img-teknologi d-flex justify-content-center">
-                            <img src="./images/teknologi.png" alt="machine">
-                        </div>
-                        <div class="teknologi-desc mt-3">
-                            <p>
-                                <span class="bold">Supernova Digipack</span> menggunakan <span class="bold">HP Indigo 20000</span> untuk mencetak packaging karena HP Indigo 20000 dapat memberikan kualitas
-									cetak yang terbaik serta waktu pengiriman yang lebih fleksibel. <br>
-									Selain itu <span class="bold">Supernova Digipack</span> dilengkapi dengan teknologi laminasi
-									dan bag making yang mumpuni untuk memproduksi berbagai jenis bag packaging.
-                            </p>
-                        </div>
-                </section>
-
-                <section class="pabrik wow fadeInUp">
-                       <div class="title-section text-center mb-5">
-							<h1 class="title">Lokasi Pabrik</h1>
-							<div class="container relative">
-								<img src="./images/dot-2.png" alt="dot-2">
-							</div>
-						</div>
-						<div class="container content">
-							<div class="row">
-							<div class="col-md-7 col-auto left">
-								<div class="card-lokasi d-flex">
-									<div class="base">
-									<img src="./images/Elements/base.png" alt="">
-									<div class="house">
-										<p>
-											Supernova Digipack
-										</p>
-										<img src="./images/Elements/factory.png" alt="" class="factory">
-										<img src="./images/Elements/null.png" alt="" class="null">
-									</div>
-									<div class="serve-title shadow-sm">
-										<h4>Detail Pemesanan</h4>
-										<h5>Kripik UMKM Nusantara</h5>
-										<p class="order">Order #54345</p>
-										<div class="serve-info d-flex">
-											<div class="item">
-												<div class="item-1 d-flex">
-													<p class="items">500</p>
-												<p class="items-sub">Standing Pounch</p>
-												</div>
-												<div class="item-2 d-flex">
-													<p class="items">500</p>
-												<p class="items-sub">Central Seal</p>
-												</div>
-											</div>
-											<div class="item-price">
-												<p class="price">Rp <span><a href="#"> Hubungi Kami</a></span></p>
-												<p class="price">Rp <span><a href="#"> Hubungi Kami</a></span></p>
-											</div>
-										</div>
-										<div class="total-harga d-flex py-2">
-											<p>Total Harga</p>
-											<p class="prices" style="margin-right: -2px;">Rp <span><a href="#"> Hubungi Kami</a></span></p>
-										</div>
-									</div>
-								</div>
-								<div class="map d-flex flex-column">
-									<img src="./images/Elements/Map.png" alt="">
-								</div>
-								<div class="info d-flex">
-									<div class="info-1">
-										<p class="title">
-											Estimasi Produksi <br>
-											<span>
-												14 Hari
-											</span>
-										</p>
-									</div>
-									<div class="info-1">
-										<p class="title">
-											Pengiriman <br>
-											<span>
-												1 Hari Express
-											</span>
-										</p>
-									</div>
-								</div>
-								</div>
-							</div>
-							<div class="col-md-5 col right">
-								<div class="info">
-									<h5>Alamat</h5>
-									<a href="#">
-										Kawasan Industri Jababeka II <br>
-										 Jalan Industri Selatan Blok LL No. 1 Pasirsari,<br>
-										  Cikarang Selatan, Bekasi 17530 - Indonesia
-									</a>
-								</div>
-								<div class="info">
-									<h5>Email</h5>
-									<a href="mailto:marketing@supernova-id.com">
-										Email marketing@supernova-id.com
-									</a>
-								</div>
-								<div class="info">
-									<h5>No Telepon</h5>
-									<a href="tel:+622189831969">
-										+62 21 89831969
-									</a>
-								</div>
-								<div class="info">
-									<h5>Fax</h5>
-									<a href="#">
-										+62 21 8983 1967
-									</a>
-								</div>
-								<div class="info">
-									<h5>Whatsapp</h5>
-									<a href="#">
-										+62 8231 7714 488
-									</a>
-								</div>
-							</div>
-						</div>
-						</div>
-                </section>
-				<div id="before-footer">
+             <div id="before-footer">
 					<div class="container">
 						<a href="#" class="d-none d-sm-block"
 							><img
@@ -289,7 +318,7 @@
 			</div>
 
 
-			<div id="footer" class="">
+            <div id="footer" class="">
 				<div class="container">
 					<div class="row">
 						<div class="logo col-12 mb-5">
@@ -376,7 +405,7 @@
 											<li class="mb-2">
 												<a href="pilih-kemasan.html">Pilihan Kemasan</a>
 											</li>
-											<li class="mb-2"><a href="blog.html">Blog</a></li>
+												<li class="mb-2"><a href="blog.html">Blog</a></li>
 											<li class="mb-2"><a href="panduan_belanja.html">Panduan Belanja</a></li>
 											<li class="mb-2"><a href="syarat_ketentuan.html">Syarat & Ketentuan</a></li>
 											<li class="mb-2"><a href="kebijakan.html">Kebijakan Privasi</a></li>
@@ -393,9 +422,9 @@
 							<span id="hide-on-mobile">-</span> PT Supernova Flexible Packaging
 						</p>
 					</div>
-					<div class="floating position-fixed">
+					<!-- <div class="floating position-fixed">
 						<a href="#"><img src="images/wa.svg" alt="" class="img-fluid" /></a>
-					</div>
+					</div> -->
 				</div>
 
 				<!-- Modal login -->
@@ -467,7 +496,7 @@
 												</button>
 											</div>
 										</div>
-										<hr>
+										<hr />
 										<!-- <div class="line"></div> -->
 										<div class="text">
 											Dengan melakukan login, anda setuju dengan Syarat &
@@ -495,7 +524,7 @@
 											Belum punya akun ?
 											<span><a href="">Ayo Daftar</a></span>
 										</h4>
-										<hr>
+										<hr />
 										<!-- <div class="line"></div> -->
 										<div class="text">
 											Dengan melakukan login, anda setuju dengan Syarat &
@@ -514,10 +543,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 			(function (b, o, i, l, e, r) {

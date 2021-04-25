@@ -1,0 +1,278 @@
+.content a {
+	text-decoration: none;
+	color: #312d75;
+}
+
+.content a .menu {
+	background: #ffffff;
+	box-shadow: inset 0px -1px 0px #c0c4cd;
+	height: 70px;
+	width: 100%;
+	font-weight: 400;
+	font-size: 18px;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+.content a .menu:hover {
+	background: rgba(192, 196, 205, 0.4);
+}
+
+.content {
+	padding: 0px 70px;
+	margin-bottom: 100px;
+}
+
+.content .title {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #312d75;
+}
+
+.mt-37 {
+	margin-top: 37px;
+}
+
+.mt-23 {
+	margin-top: 17px !important;
+}
+
+/* .extend-width {
+	width: 105%;
+} */
+
+.second-row,
+.third-row,
+.second-row-right,
+.third-row-right {
+	margin-top: 30px;
+}
+
+.right {
+	/* padding-left: 50px !important; */
+	width: 100%;
+}
+
+.extend-height-web {
+	height: 90px !important;
+}
+
+.four-row {
+	margin-top: 125px;
+}
+
+.four-row .info h4 {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+
+	color: #312d75;
+}
+
+.four-row .info .second-teks {
+	margin-top: 25px;
+}
+
+.four-row .info .summary {
+	color: #c0c4cd;
+	font-weight: 400 !important;
+	margin-top: 20px;
+	font-size: 24px;
+}
+
+.css-button {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 0px #3866a3 solid;
+	background-color: #0ad35a;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+.css-button:hover {
+	background-color: #1dc639;
+}
+.css-button-icon {
+	padding: 18px 23px;
+	border-radius: 10px 0 0 10px;
+	background-color: #1dc639;
+}
+.css-button-icon i {
+	position: relative;
+	font-size: 30px;
+}
+.css-button-text {
+	padding: 18px 90px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.css-button-email {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 10px;
+	border: 0px #3866a3 solid;
+	background-color: #fd927d;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+.css-button-email:hover {
+	background-color: #f4846d;
+}
+.css-button-email-icon {
+	padding: 21px 23px;
+	border-radius: 10px 0 0 10px;
+	background-color: #f4846d;
+}
+.css-button-email-icon i {
+	position: relative;
+	font-size: 30px;
+}
+.css-button-email-text {
+	padding: 21px 108px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.primary {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.primary-summary {
+	color: #c0c4cd;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 19px 20px 19px;
+	font-weight: 400 !important;
+}
+
+.btn-primaryku {
+	background: linear-gradient(180deg, #fdf025 0%, #ffc90a 100%);
+	border-radius: 6px;
+	padding: 20px 0px !important;
+	color: #312d75;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	border: 1px solid #fdf025;
+}
+
+.btn-primaryku:hover {
+	background: none;
+	border: 1px solid #ffc90a;
+	padding: 20px 0px !important;
+	color: #312d75;
+}
+
+.m-top {
+	margin-top: 50px;
+}
+
+.m-bottom {
+	margin-bottom: 15px;
+}
+
+.left {
+	padding-right: 55px;
+}
+
+.wa-btn .css-button-icon img,
+.email-btn .css-button-email img {
+	width: 40px;
+}
+
+@media (max-width: 578px) {
+	.content {
+		padding: 0px 15px;
+	}
+
+	.left {
+		padding-right: 15px;
+	}
+
+	.content a .menu {
+		font-size: 16px;
+	}
+
+	.content .title {
+		margin-left: 5px;
+		font-size: 18px;
+	}
+
+	.first-row,
+	.first-row-right {
+		margin-top: 30px;
+	}
+
+	.four-row {
+		margin-top: 70px;
+	}
+
+	.four-row .info h4,
+	.four-row .info .summary {
+		font-size: 18px;
+	}
+
+	.css-button-text,
+	.css-button-email-text {
+		font-size: 16px;
+	}
+
+	.wa-btn .css-button-icon img,
+	.email-btn .css-button-email img {
+		width: 40px;
+	}
+
+	.primary {
+		font-size: 16px;
+	}
+
+	.primary-summary {
+		font-size: 14px;
+		margin: 0px 25px;
+		font-weight: 400;
+	}
+
+	.btn-primaryku {
+		margin-top: 30px;
+		font-size: 16px;
+	}
+
+	.four-row .info .summary {
+		margin-top: -5px !important;
+	}
+
+	.four-row .info .second-teks {
+		margin-top: 40px;
+	}
+
+	.css-button-text {
+		padding: 10px 60px;
+	}
+
+	.css-button-email-text {
+		padding: 13px 78px;
+	}
+
+	.extend-height-mobile {
+		height: 100px !important;
+		padding-top: 30px !important;
+	}
+
+	.special {
+		line-height: 35px;
+		height: 120px !important;
+	}
+}

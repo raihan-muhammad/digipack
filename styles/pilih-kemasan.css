@@ -41,6 +41,12 @@ body {
 	z-index: 3;
 }
 
+.owl-next:focus,
+.owl-prev:focus {
+	outline: none !important;
+	border: none !important;
+}
+
 .navbar-collapse {
 	position: relative;
 }
@@ -221,14 +227,13 @@ body {
 	margin-top: 50px !important;
 }
 
-.form-input-nama-produk:active {
+/* .form-input-nama-produk:active {
 	box-shadow: none;
 	border: 1px solid #1891f6;
-}
+} */
 
 .form-input-nama-produk:focus {
 	box-shadow: none !important;
-	border: 1px solid #1891f6;
 }
 
 #before-footer {

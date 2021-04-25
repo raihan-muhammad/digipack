@@ -1,0 +1,109 @@
+.title-content {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.title-content .title {
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.title-content .summary-title-content {
+	margin-top: 30px;
+	color: #718096;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 30px 280px;
+}
+
+hr {
+	margin: 0px 170px;
+	margin-top: 30px;
+}
+
+.alur-belanja {
+	margin: 100px 200px 100px 200px;
+}
+
+.alur-belanja .info {
+	text-align: center;
+	width: 100%;
+}
+
+.alur-belanja .info img {
+	width: 130px;
+	margin-left: -10px !important;
+}
+
+.alur-belanja .inf-alur {
+	padding-left: 25px;
+}
+
+.alur-belanja .info-alur .title {
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.alur-belanja .info-alur .summary-title {
+	font-size: 14px;
+	padding: 0px 10px;
+	color: #718096;
+	margin-top: 15px;
+}
+
+.alur-belanja-second {
+	margin-top: 60px;
+}
+
+/* .padding-400 {
+	padding: 0px 250px 0px 90px;
+} */
+
+.top-5 {
+	margin-top: 50px;
+}
+
+@media (max-width: 578px) {
+	.alur-belanja {
+		margin: 0px;
+	}
+
+	.padding-400 {
+		padding: 0px 15px;
+		margin-bottom: 130px;
+	}
+
+	.alur-belanja .info-alur .summary-title {
+		margin: 0px 70px;
+	}
+
+	.title-content {
+		margin-top: 50px;
+	}
+
+	.title-content .title {
+		font-size: 18px;
+	}
+
+	.title-content .summary-title-content {
+		font-size: 14px;
+		margin: 15px 20px 30px 20px;
+	}
+
+	.alur-belanja .info {
+		margin-top: 50px;
+	}
+
+	.top-5 {
+		margin-top: 0px;
+	}
+
+	hr {
+		margin: 0px 15px;
+	}
+
+	.alur-belanja .info-alur .title {
+		margin-bottom: 20px;
+	}
+}

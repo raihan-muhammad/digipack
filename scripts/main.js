@@ -126,11 +126,27 @@ $(document).ready(function () {
 
 // custom select
 
+function inputProduk() {
+	var produk = document.getElementById('input-produk-name').value;
+	if (produk.length > 0) {
+		document.getElementById('input-produk-name').classList.add('border-blue');
+	} else if (produk.length <= 0) {
+		document
+			.getElementById('input-produk-name')
+			.classList.remove('border-blue');
+	}
+
+	return produk;
+}
+
 for (const dropdown of document.querySelectorAll('.custom-select-wrapper')) {
 	dropdown.addEventListener('click', function () {
 		this.querySelector('.custom-select').classList.toggle('open');
-		document.getElementById('trigger').classList.add('border-blue');
-		console.log(document.getElementById('trigger').classList);
+		for (const trigger of document.querySelectorAll('#trigger')) {
+			trigger.classList.add('border-blue');
+			console.log('add');
+			return trigger;
+		}
 	});
 }
 
@@ -150,8 +166,12 @@ for (const option of document.querySelectorAll('.custom-option')) {
 			this.closest('.custom-select').querySelector(
 				'.custom-select__trigger span'
 			).textContent = this.textContent;
+			for (const trigger of document.querySelectorAll('#trigger')) {
+				trigger.classList.add('border-blue');
+				console.log('add');
+				return trigger;
+			}
 		}
-		document.getElementById('trigger').classList.remove('border-blue');
 	});
 }
 
@@ -159,12 +179,19 @@ window.addEventListener('click', function (e) {
 	for (const select of document.querySelectorAll('.custom-select')) {
 		if (!select.contains(e.target)) {
 			select.classList.remove('open');
-			// document.getElementById('trigger').classList[1].replace('');
-			// console.log(document.getElementById('trigger').classList);
 		}
 	}
 });
 
+// window.addEventListener('click', function () {
+// 	for (const trigger of document.querySelectorAll('#trigger')) {
+// 		let borderBlueActive = trigger.classList.contains('border-blue');
+// 		if (borderBlueActive) {
+// 			trigger.classList.remove('border-blue');
+// 			console.log('contain');
+// 		}
+// 	}
+// });
 // if (document.querySelector('div').classList.contains('.custom-select open')) {
 // 	for (const selectMenu of document.querySelectorAll(
 // 		'.custom-select__trigger'
