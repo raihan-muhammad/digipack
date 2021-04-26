@@ -60,6 +60,11 @@ body {
 	padding: 0;
 }
 
+.navbar-toggler:focus {
+	outline: none;
+	border: none;
+}
+
 .navbar-toggler.collapsed .navbar-toggler-icon {
 	background: url(../images/burgermenu.svg) no-repeat center;
 }
@@ -84,6 +89,10 @@ body {
 
 .relative {
 	position: relative;
+}
+
+.second-link-active {
+	color: #ffc90a !important;
 }
 
 .profile-nav .profile-title-no-underline {
